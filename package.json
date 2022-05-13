@@ -7,7 +7,7 @@
     "tailwind:watch": "cross-env TAILWIND_MODE=watch cross-env NODE_ENV=development postcss src/styles/tailwind.css -o src/styles/tailwind-output.css -w",
     "tailwind:build": "cross-env TAILWIND_MODE=build cross-env NODE_ENV=production postcss src/styles/tailwind.css -o src/styles/tailwind-output.css",
     "dev": "concurrently \"yarn run dev:only\" \"yarn run tailwind:watch\"",
-    "build": "svelte-kit build",
+    "build": "yarn run tailwind:build && yarn run build:only",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
     "prepare": "svelte-kit sync",
