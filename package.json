@@ -2,7 +2,11 @@
   "name": "ios-webview",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev --port 3009",
+    "dev:only": "svelte-kit dev --host --port 3009",
+    "build:only": "svelte-kit build",
+    "tailwind:watch": "cross-env TAILWIND_MODE=watch cross-env NODE_ENV=development postcss src/styles/tailwind.css -o src/styles/tailwind-output.css -w",
+    "tailwind:build": "cross-env TAILWIND_MODE=build cross-env NODE_ENV=production postcss src/styles/tailwind.css -o src/styles/tailwind-output.css",
+    "dev": "concurrently \"yarn run dev:only\" \"yarn run tailwind:watch\"",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
@@ -15,7 +19,12 @@
     "@sveltejs/kit": "next",
     "svelte": "^3.44.0",
     "svelte-check": "^2.2.6",
-    "typescript": "~4.6.2"
+    "typescript": "~4.6.2",
+    "concurrently": "^7.0.0",
+    "cross-env": "^7.0.3",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.23",
+    "autoprefixer": "^10.4.2"
   },
   "type": "module",
   "dependencies": {
