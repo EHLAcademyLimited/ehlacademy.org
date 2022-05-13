@@ -20,7 +20,6 @@
 	import dayjs from 'dayjs'
 	$: is_allow_full_extend = redeem_status.is_allow
 	$: end_date = redeem_status.end_date
-	$: time_left = dayjs(end_date).fromNow()
 	$: day_diff = dayjs(end_date).diff(dayjs(), 'day')
 
 	import {getContext} from 'svelte'
@@ -42,6 +41,18 @@
 			})
 		}
 	}
+
+	const onClick = (rc_level, rc_tag) => {
+		window.dispatchEvent(new Event('gameFinish'))
+		const msg = {
+			type: 'search',
+			data: {
+				rc_level,
+				rc_tag
+			}
+		}
+		window.postMessage(JSON.stringify(msg))
+	}
 </script>
 
 
@@ -54,14 +65,23 @@
 			</div>
 		</div>
 	</div>
-	<div class="h-96 bg-yellow-100 flex items-center justify-center">
-		<h1 class="text-4xl">Ad 01</h1>
+	<div on:click={() => {onClick('p5', 'course-tag-reading-speaking')}} class="h-96 bg-yellow-100 flex items-center justify-center">
+		<div>
+			<h1 class="text-4xl">Ad 01</h1>
+			<p>'p5', 'course-tag-reading-speaking'</p>
+		</div>
 	</div>
-	<div class="h-96 bg-yellow-50 flex items-center justify-center">
-		<h1 class="text-4xl">Ad 02</h1>
+	<div on:click={() => {onClick('p4', 'course-tag-reading-speaking')}} class="h-96 bg-yellow-50 flex items-center justify-center">
+		<div>
+			<h1 class="text-4xl">Ad 02</h1>
+			<p>'p4', 'course-tag-reading-speaking'</p>
+		</div>
 	</div>
-	<div class="h-96 bg-yellow-100 flex items-center justify-center">
-		<h1 class="text-4xl">Ad 03</h1>
+	<div on:click={() => {onClick('p3', 'course-tag-writing')}} class="h-96 bg-yellow-100 flex items-center justify-center">
+		<div>
+			<h1 class="text-4xl">Ad 03</h1>
+			<p>'p3', 'course-tag-writing'</p>
+		</div>
 	</div>
 
 	<div class="h-96 bg-yellow-200 flex items-center justify-center">
