@@ -17,10 +17,12 @@
 <script>
 	export let is_authorized
 	export let is_allow_full_extend
-	import {notifications} from "$lib/store/notification";
+	import {getContext} from 'svelte'
+	const {openModal, closeModal} = getContext('simple-modal')
+	import VocabDetailDialog from "../lib/promotion/VocabDetailDialog.svelte";
 
 	const onLearnMore = () => {
-
+		openModal(VocabDetailDialog)
 	}
 
 	const onRedeem = async () => {

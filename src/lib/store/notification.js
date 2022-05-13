@@ -1,6 +1,6 @@
 import { writable, derived } from "svelte/store"
 
-const TIMEOUT = 8000
+const TIMEOUT = 1000
 
 function createNotificationStore (timeout) {
 	const _notifications = writable([])
