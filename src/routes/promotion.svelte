@@ -86,19 +86,33 @@
 
 	<div class="h-96 bg-yellow-200 flex items-center justify-center">
 		<div>
-			<img src="/vocab-present2.png" alt="hi" class="w-48">
-		</div>
-		<div class="ml-8">
-			<img src="/title.png" alt="hi" class="w-48 mb-4">
-			<button on:click={onLearnMore} class="bg-white text-amber-500 border border-current px-8 py-2 rounded-full text-lg">
-				詳情
-			</button>
-			<button on:click={onRedeem} class="bg-amber-500 text-white px-8 py-2 rounded-full text-lg ml-2 border-4 border-amber-400 font-bold">
-				換領
-			</button>
+			<img src="/vocab-present.png" alt="hi" class="w-64">
 			<p class="mt-4 bg-green-500 text-white text-sm rounded px-4 py-2">
 				你已經成功換取，有效期還有{day_diff}天
 			</p>
 		</div>
+		<div class="ml-8">
+			<img src="/vocab-exam-title.png" alt="hi" class="h-24 mb-4">
+			<div class="grid grid-cols-2 gap-x-4">
+				<p class="pt">解決串字難題</p>
+				<p class="pt">解決默書難題</p>
+				<p class="pt">自動糾正法音</p>
+				<p class="pt">智能清除弱項</p>
+			</div>
+			<div class="my-4 flex w-full">
+				<button on:click={onLearnMore} class="bg-white text-amber-500 border border-current px-8 py-2 rounded-full text-lg flex-1">
+					詳情
+				</button>
+				<button on:click={onRedeem} class="bg-amber-500 text-white px-8 py-2 rounded-full text-lg ml-2 border-4 border-amber-400 font-bold flex-1">
+					換領
+				</button>
+			</div>
+		</div>
 	</div>
 </div>
+
+<style>
+	.pt {
+		@apply inline-block border-2 border-red-500 bg-white px-4 py-1 rounded-full my-1 text-base text-center shadow;
+	}
+</style>
