@@ -18,8 +18,6 @@
 	export let is_authorized
 	export let redeem_status
 	import dayjs from 'dayjs'
-	import relativeTime from "dayjs/plugin/relativeTime";
-	dayjs.extend(relativeTime)
 	$: is_allow_full_extend = redeem_status.is_allow
 	$: end_date = redeem_status.end_date
 	$: time_left = dayjs(end_date).fromNow()
