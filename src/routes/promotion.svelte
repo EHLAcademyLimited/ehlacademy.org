@@ -19,23 +19,45 @@
 	export let is_allow_full_extend
 	import {notifications} from "$lib/store/notification";
 
-	const onRedeemClick = async () => {
-		const {data} = await http.post(fetch, '/aiMembershipApi/special_extends_cash_user_plan', null, {
-			notification: 'Redeem success'
-		})
+	const onLearnMore = () => {
+
+	}
+
+	const onRedeem = async () => {
+		if (!is_authorized) {
+			alert('login first')
+		} else if (!is_allow_full_extend) {
+			alert('你仲未like我地facebook, like 完call我地，再入番黎')
+		} else {
+			const {data} = await http.post(fetch, '/aiMembershipApi/special_extends_cash_user_plan', null, {
+				notification: 'Redeem success'
+			})
+		}
 	}
 </script>
 
+
 <div class="container p-4">
-	<h1 on:click={() => {notifications.success('hi')}} class="text-4xl font-light mb-4">EHLA Promotion</h1>
-	<p>is_allow_full_extend: {is_allow_full_extend}</p>
-	{#if is_authorized}
-		<button on:click={onRedeemClick} class="{is_allow_full_extend ?
-		'bg-blue-500 text-white hover:bg-blue-400' :
-		'bg-gray-300 text-white'} px-4 py-2 rounded">
-			Redeem vocab
-		</button>
-	{:else}
-		<p>Please login in</p>
-	{/if}
+	<div class="h-96 bg-yellow-50 flex items-center justify-center">
+		<h1 class="text-4xl">Scroll 到落底扲禮物</h1>
+	</div>
+	<div class="h-96 bg-yellow-100 flex items-center justify-center">
+		<h1 class="text-4xl">Ad 01</h1>
+	</div>
+	<div class="h-96 bg-yellow-50 flex items-center justify-center">
+		<h1 class="text-4xl">Ad 02</h1>
+	</div>
+	<div class="h-96 bg-yellow-100 flex items-center justify-center">
+		<h1 class="text-4xl">Ad 03</h1>
+	</div>
+	<div class="h-96 bg-yellow-200 flex items-center justify-center">
+		<img src="/vocab-present.jpeg" alt="hi" class="w-48">
+		<div>
+			<img src="/title.jpeg" alt="hi" class="w-48">
+			<button on:click={onLearnMore} class="button">Learn more</button>
+			<button on:click={onRedeem} class="bg-blue-500 text-white hover:bg-blue-400 px-4 py-2 rounded">
+				Redeem now
+			</button>
+		</div>
+	</div>
 </div>
