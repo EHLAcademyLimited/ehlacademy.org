@@ -24,7 +24,63 @@
 
 	import {getContext} from 'svelte'
 	const {openModal, closeModal} = getContext('simple-modal')
-	import VocabDetailDialog from "../lib/promotion/VocabDetailDialog.svelte";
+	import VocabDetailDialog from "$lib/promotion/VocabDetailDialog.svelte";
+	import {goto} from "$app/navigation";
+	const is_web_view = true
+
+	const onAdClick = (ad) => {
+		if (is_web_view) {
+			window.dispatchEvent(new Event('gameFinish'))
+			const msg = {
+				type: 'search',
+				data: {
+					rc_level: ad.rc_level,
+					rc_tag: ad.rc_tag
+				}
+			}
+			window.postMessage(JSON.stringify(msg))
+		} else {
+			goto(`/hk/zoom/classroom?rc_tag=${ad.rc_tag}&rc_level=${ad.rc_level}`)
+		}
+	}
+
+	const ads = [
+		{
+			image: '/promotion/ad-weak-eng.jpeg',
+			rc_tag: 'all',
+			rc_level: 'all'
+		},
+		{
+			image: '/promotion/ad-band1.jpeg',
+			rc_tag: 'course-tag-exam-p4-up',
+			rc_level: 'all'
+		},
+		{
+			image: '/promotion/ad-dse-writing.jpeg',
+			rc_tag: 'course-tag-writing',
+			rc_level: 'DSE'
+		},
+		{
+			image: '/promotion/ad-exam.jpeg',
+			rc_tag: 'course-tag-exam-p4-up',
+			rc_level: 'all'
+		},
+		{
+			image: '/promotion/ad-interview.jpeg',
+			rc_tag: 'course-tag-interview',
+			rc_level: 'all'
+		},
+		{
+			image: '/promotion/ad-k.jpeg',
+			rc_tag: 'course-tag-interview',
+			rc_level: 'k123'
+		},
+		{
+			image: '/promotion/ad-p6-s1.jpeg',
+			rc_tag: 'all',
+			rc_level: 'js'
+		}
+	]
 
 	const onLearnMore = () => {
 		openModal(VocabDetailDialog)
@@ -59,40 +115,28 @@
 <div>
 	<div class="h-96 bg-yellow-50 flex items-center justify-center">
 		<div class="container grid grid-cols-2 text-center">
-			<img src="/present.png" alt="hi" class="w-60 mx-auto">
+			<img src="/promotion/present.png" alt="hi" class="w-60 mx-auto">
 			<div class="flex items-center justify-start">
 				<h1 class="text-6xl text-amber-500">轆到落底扲禮物</h1>
 			</div>
 		</div>
 	</div>
-	<div on:click={() => {onClick('p5', 'course-tag-reading-speaking')}} class="h-96 bg-yellow-100 flex items-center justify-center">
-		<div>
-			<h1 class="text-4xl">Ad 01</h1>
-			<p>'p5', 'course-tag-reading-speaking'</p>
-		</div>
-	</div>
-	<div on:click={() => {onClick('p4', 'course-tag-reading-speaking')}} class="h-96 bg-yellow-50 flex items-center justify-center">
-		<div>
-			<h1 class="text-4xl">Ad 02</h1>
-			<p>'p4', 'course-tag-reading-speaking'</p>
-		</div>
-	</div>
-	<div on:click={() => {onClick('p3', 'course-tag-writing')}} class="h-96 bg-yellow-100 flex items-center justify-center">
-		<div>
-			<h1 class="text-4xl">Ad 03</h1>
-			<p>'p3', 'course-tag-writing'</p>
-		</div>
+
+	<div class="grid grid-cols-2 gap-4">
+		{#each ads as ad}
+			<img on:click={() => {onAdClick(ad)}} src={ad.image} alt="ad" class="border-8">
+		{/each}
 	</div>
 
 	<div class="h-96 bg-yellow-200 flex items-center justify-center">
 		<div>
-			<img src="/vocab-present.png" alt="hi" class="w-64">
+			<img src="/promotion/vocab-present.png" alt="hi" class="w-64">
 			<p class="mt-4 bg-green-500 text-white text-sm rounded px-4 py-2">
 				你已經成功換取，有效期還有{day_diff}天
 			</p>
 		</div>
 		<div class="ml-8">
-			<img src="/vocab-exam-title.png" alt="hi" class="h-24 mb-4">
+			<img src="/promotion/vocab-exam-title.png" alt="hi" class="h-24 mb-4">
 			<div class="grid grid-cols-2 gap-x-4">
 				<p class="pt">解決串字難題</p>
 				<p class="pt">解決默書難題</p>
