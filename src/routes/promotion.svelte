@@ -138,8 +138,19 @@
 		<img src="/promotion/ad_scroll_to_btm_2.png" alt="hi" class="h-48 sm:h-60 mx-auto">
 	</div>
 
+	<div class="md:flex items-center">
+		<img src="/promotion-banner.png" alt="promotion-banner" class="w-[600px] mx-auto flex-1 md:w-1/2">
+
+		<div class="px-4 md:text-xl flex-1 md:w-1/2">
+			<p class="font-bold">如何報名</p>
+			<p>👉 😀 家長購買課堂學券後，可以非常靈活地根據需要，隨時組合及靈活Book堂(預約課堂)。</p>
+			<p>☎️ 報名及試堂查詢</p>
+			<p>WhatsApp: (+852) 9654 8680</p>
+		</div>
+	</div>
+
 	<div class="container py-4">
-		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 			{#each ads as ad}
 				{#if isAdVisible(ad)}
 					<img on:click={() => {onAdClick(ad)}} src={ad.image} alt="ad" class="cursor-pointer border-8 hover:border-slate-500">
@@ -148,17 +159,13 @@
 		</div>
 	</div>
 
-	<div class="sm:h-96 p-4 sm:p-0 bg-yellow-200 block sm:flex items-center justify-center">
+	<div class="lg:h-96 p-4 sm:py-4 bg-yellow-200 block sm:flex items-center justify-center">
 		<div>
 			<img src="/promotion/vocab-present.png" alt="hi" class="sm:w-64 w-48 mx-auto">
-			{#if end_date && day_diff >= 0}
-				<p class="mt-4 bg-green-500 text-white text-sm rounded px-4 py-2">
-					你已經成功換取，有效期還有<span class="text-2xl font-bold mx-0.5">{day_diff}</span>天
-				</p>
-			{/if}
+			<p class="hidden md:block text-xl text-amber-700 mb-2 font-light mx-4">群組成員專屬3個月免費</p>
 		</div>
 		<div class="sm:ml-8 mt-4 sm:mt-0">
-			<p class="text-xl text-amber-700 mb-2 font-light mx-4">會員專屬</p>
+			<p class="md:hidden text-xl text-amber-700 mb-2 font-light mx-4">群組成員專屬3個月免費</p>
 			<img src="/promotion/vocab-exam-title.png" alt="hi" class="h-24 mb-4">
 			<div class="grid grid-cols-2 gap-x-4">
 				<p class="pt">解決串字難題</p>
@@ -166,13 +173,18 @@
 				<p class="pt">自動糾正法音</p>
 				<p class="pt">智能清除弱項</p>
 			</div>
+			{#if end_date && day_diff >= 0}
+				<p class="mt-4 bg-green-500 text-white text-sm rounded px-4 py-2">
+					你已經成功換取，有效期還有<span class="text-2xl font-bold mx-0.5">{day_diff}</span>天
+				</p>
+			{/if}
 			<div class="my-4 flex w-full">
-				<button on:click={onLearnMore} class="bg-white text-amber-500 border border-current px-8 py-2 rounded-full text-lg flex-1">
-					詳情
+				<button on:click={onLearnMore} class="bg-white text-amber-500 border border-current px-4 py-2 rounded-full text-lg flex-1 whitespace-nowrap">
+					功能介紹及示範
 				</button>
 				<button on:click={onRedeem} class="bg-amber-500 text-white px-8 py-2 rounded-full text-lg ml-2 border-4 border-amber-400 font-bold flex-1 whitespace-nowrap">
 					{#if day_diff >= 0}
-						再延長7日
+						再延長至7日
 					{:else}
 						換領7日
 					{/if}

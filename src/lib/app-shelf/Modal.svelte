@@ -135,9 +135,9 @@
 					transition:currentTransitionBg={state.transitionBgProps}
 					style={cssBg}
 	>
-		<div class="relative m-8 max-h-full" bind:this={wrap}>
+		<div class="relative m-4 max-h-full" bind:this={wrap}>
 			<div
-							class="relative max-w-full max-h-full m-8 rounded {bg_class}"
+							class="relative max-w-full max-h-full m-4 rounded {bg_class}"
 							transition:currentTransitionWindow={state.transitionWindowProps}
 							on:introstart={onOpen}
 							on:outrostart={onClose}
