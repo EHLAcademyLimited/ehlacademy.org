@@ -15,10 +15,9 @@
 
 <script>
 	export let is_authorized
-	console.log('is_authorized', is_authorized)
 	let redeem_status = {}
 	import dayjs from 'dayjs'
-	import utc from "dayjs/plugin/utc";
+	import utc from "dayjs/plugin/utc.js";
 	dayjs.extend(utc)
 
 	$: is_allow_full_extend = dayjs.utc(redeem_status.allow_extend_vocab_task_end_date).local().isAfter(dayjs())
