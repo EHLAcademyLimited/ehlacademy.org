@@ -1,10 +1,11 @@
 import {usermodel} from "$lib/usermodal";
 import cookie from "cookie";
 
-export const get = async (event) => {
-	const access_token = event.url.searchParams.get('access_token')
+export const post = async (event) => {
+	const _body = await event.request.json()
+	const access_token = _body.access_token
 	let _headers = {}
-	if (access_token !== 'null') {
+	if (access_token && access_token !== 'null') {
 		event.locals.access_token = access_token
 		_headers['set-cookie'] = cookie.serialize('access_token', access_token, {
 			path: '/',
