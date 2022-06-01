@@ -19,6 +19,7 @@
 	import dayjs from 'dayjs'
 	import utc from "dayjs/plugin/utc.js";
 	dayjs.extend(utc)
+	import RedeemSuccessDialog from "../lib/promotion/RedeemSuccessDialog.svelte";
 
 	$: is_allow_full_extend = dayjs.utc(redeem_status.allow_extend_vocab_task_end_date).local().isAfter(dayjs())
 	$: end_date = dayjs.utc(redeem_status.student_vocab_task_end_date).local()
@@ -27,6 +28,7 @@
 	import NotYetLikeDialog from "$lib/promotion/NotYetLikeDialog.svelte";
 
 	import {getContext} from 'svelte'
+	let loading
 
 	const {openModal} = getContext('simple-modal')
 	import VocabDetailDialog from "$lib/promotion/VocabDetailDialog.svelte";
@@ -38,12 +40,15 @@
 		const res = await http.get(fetch, '/userApi/children')
 		const children = res.data
 		levels = children.map(c => c.level)
+		checkRedeemStatus()
+	})
 
+	const checkRedeemStatus = async () => {
 		const {data, success, debug} = await http.post(fetch, '/aiMembershipApi/is_allow_full_extend')
 		if (success) {
 			redeem_status = data
 		}
-	})
+	}
 
 	const onAdClick = (ad) => {
 		const msg = {
@@ -120,14 +125,19 @@
 	}
 
 	const onRedeem = async () => {
+		if (loading) return
+		loading = true
+		await checkRedeemStatus()
 		if (!is_authorized) {
 			alert('login plz')
 		} else if (!is_allow_full_extend) {
 			openModal(NotYetLikeDialog)
+			loading = false
 		} else {
-			const {data} = await http.post(fetch, '/aiMembershipApi/special_extends_cash_user_plan', null, {
-				notification: 'Redeem success'
-			})
+			const {data} = await http.post(fetch, '/aiMembershipApi/special_extends_cash_user_plan')
+			loading = false
+			openModal(RedeemSuccessDialog)
+			await checkRedeemStatus()
 		}
 	}
 </script>
@@ -182,7 +192,7 @@
 				<button on:click={onLearnMore} class="bg-white text-amber-500 border border-current px-4 py-2 rounded-full text-lg flex-1 whitespace-nowrap">
 					功能介紹及示範
 				</button>
-				<button on:click={onRedeem} class="bg-amber-500 text-white px-8 py-2 rounded-full text-lg ml-2 border-4 border-amber-400 font-bold flex-1 whitespace-nowrap">
+				<button on:click={onRedeem} class="{loading ? 'bg-gray-300' : 'bg-amber-500'} text-white px-8 py-2 rounded-full text-lg ml-2 border-4 border-amber-400 font-bold flex-1 whitespace-nowrap">
 					{#if day_diff >= 0}
 						再延長至7日
 					{:else}
