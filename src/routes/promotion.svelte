@@ -185,7 +185,7 @@
 			</div>
 			{#if end_date && day_diff >= 0}
 				<p class="mt-4 bg-green-500 text-white text-sm rounded px-4 py-2">
-					你已經成功換取，有效期還有<span class="text-2xl font-bold mx-0.5">{day_diff}</span>天
+					你已經成功換取，有效期還有<span class="text-2xl font-bold mx-0.5">{Number(day_diff) + 1}</span>天
 				</p>
 			{/if}
 			<div class="my-4 flex w-full">
