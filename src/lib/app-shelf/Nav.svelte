@@ -46,7 +46,7 @@
 	}
 </script>
 
-<nav class="px-2 sm:px-4 inset-x-0 top-0 z-50 transition-all fixed text-gray-500" class:floated>
+<nav class="bg-white px-2 sm:px-4 inset-x-0 top-0 z-50 transition-all fixed text-gray-500" class:floated>
 	<div class="w-full flex items-center mx-auto h-12 sm:h-20 max-w-screen-xl flex-1 lg:flex-initial">
 		<a href="/" class="order-2 lg:order-1 flex-1 lg:flex-initial justify-center w-auto lg:w-60 inline-flex items-center text-red-500 transition-all" class:gray-logo={segment === 'animated-library' && !floated}>
 
