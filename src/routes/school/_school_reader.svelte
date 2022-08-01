@@ -1,6 +1,6 @@
 <script>
 	import {t, locale} from 'svelte-i18n'
-	import Youtube from '$lib/ui/YouTubePopup.svelte'
+	import Youtube from '$lib/ui/YoutubePopup.svelte'
 	import {getContext} from 'svelte'
 	const {open} = getContext('simple-modal')
 	import Icon from "$lib/ui/Icon.svelte";
