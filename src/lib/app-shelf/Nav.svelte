@@ -14,8 +14,8 @@
 	export let segment
 
 	let floated = false
-	let mobile_menu_items = [$menu_items.home, $menu_items.main[0],$menu_items.main[1],$menu_items.main[2],$menu_items.org,$menu_items.main[3]]
-	$: is_school = $page.url.pathname === '/organisation/school'
+	let mobile_menu_items = [$menu_items.home, $menu_items.main[0],$menu_items.main[1],$menu_items.main[2],$menu_items.main[3]]
+	$: is_school = $page.url.pathname === '/school'
 
 	onMount(() => {
 		document.body.onscroll = () => {

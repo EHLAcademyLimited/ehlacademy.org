@@ -70,43 +70,6 @@ export default readable({
 			children: []
 		}
 	],
-	profile: [
-		{
-			label: '訂閱狀況',
-			href: '/premium'
-		},
-		{
-			label: '學劵',
-			href: '/credit'
-		},
-		{
-			label: '帳戶',
-			href: '/account-settings'
-		},
-		'divider',
-		{
-			label: '幫助',
-			href: '/help'
-		},
-		{
-			label: '登出',
-			href: '/logout'
-		}
-	],
-	org: {
-		label: 'nav.school_and_org',
-		href: '',
-		children: [
-			{
-				label: 'nav.school_corner',
-				href: '/organisation/school'
-			},
-			{
-				label: 'nav.zoom_login_link',
-				href: 'https://www.ehla-class.org'
-			}
-		]
-	},
 	home: {
 		label: 'nav.home',
 		href: '/'

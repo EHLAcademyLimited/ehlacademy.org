@@ -7,7 +7,7 @@
 		[$menu_items.main[0]],
 		[$menu_items.main[1]],
 		[$menu_items.main[2]],
-		[$menu_items.main[3], $menu_items.org],
+		[$menu_items.main[3]],
 	]
 </script>
 
