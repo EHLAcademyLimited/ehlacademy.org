@@ -211,6 +211,6 @@
 
 <style>
 	.pt {
-		@apply inline-block border-2 border-red-500 bg-white px-4 py-1 rounded-full my-1 text-base text-center shadow;
+		@apply inline-block border-2 border-red-500 bg-white px-4 py-1 rounded-full my-1 text-center shadow;
 	}
 </style>
