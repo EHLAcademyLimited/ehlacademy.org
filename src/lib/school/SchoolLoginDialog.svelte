@@ -5,33 +5,25 @@
 	const mapper = {
 		student: [
 			{
-				name_en: 'Writing submission portal',
-				desc_en: 'For client on or after 2021',
-				name_hk: '英文作文提交系統',
-				desc_hk: '如果你是2021年或之後的客戶',
+				name_en: 'School writing assignment submission',
+				name_hk: '學校英文作文功課提交',
 				href: 'https://student.ehlacademy.org'
 			},
 			{
-				name_en: 'Legacy portal (AT)',
-				desc_en: 'For client on or before 2020',
-				name_hk: '舊版本 (AT)',
-				desc_hk: '如果你是2020年或之前的客戶',
+				name_en: 'HKAT (student) Login',
+				name_hk: 'HKAT (學生端) 登入',
 				href: 'https://id.ehlacademy.org'
 			}
 		],
 		teacher: [
 			{
-				name_en: 'New portal',
-				desc_en: 'For client on or after 2021',
-				name_hk: '新版本',
-				desc_hk: '如果你是2021年或之後的客戶',
+				name_en: 'School portal (teacher) login',
+				name_hk: '學校平台（老師端）登入',
 				href: 'https://school.ehlacademy.org'
 			},
 			{
-				name_en: 'Legacy portal (AT)',
-				desc_en: 'For client on or before 2020',
-				name_hk: '舊版本 (AT)',
-				desc_hk: '如果你是2020年或之前的客戶',
+				name_en: 'HKAT (teacher) Login',
+				name_hk: 'HKAT (老師端) 登入',
 				href: 'https://teach.ehlacademy.org'
 			}
 		]
@@ -44,10 +36,10 @@
 	<p class="text-p2 text-gray-700 mt-2 mb-4 text-center">{$t(`school.${role}_login`)}</p>
 	{#if items}
 		{#each items as item}
-			<a class="border-gray-400 hover:bg-brown-100a border rounded-lg px-4 py-3 bg-white flex mb-4" href="{item.href}?lang={$locale}">
+			<a class="border-gray-400 hover:bg-brown-100a border rounded-lg px-4 py-6 bg-white flex mb-4" href="{item.href}?lang={$locale}">
 				<div>
 					<div class="text-p2 leading-none">{item[`name_${$locale}`]}</div>
-					<div class="text-sm">{item[`desc_${$locale}`]}</div>
+<!--					<div class="text-sm">{item[`desc_${$locale}`]}</div>-->
 				</div>
 				<Icon className="w-4 ml-auto" name="right"/>
 			</a>
