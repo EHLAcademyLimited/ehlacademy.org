@@ -72,7 +72,7 @@
 	<div class="max-w-screen-xl mx-auto py-12 md:py-24 xl:py-32 px-6 md:px-12 xl:px-16">
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 xl:gap-16">
 			<div>
-				<img src="images/snap-group.jpg" alt="forum" class="w-full">
+				<img src="/snap-group.jpg" alt="forum" class="w-full">
 			</div>
 			<div class="self-center">
 				<h2 class="text-t1 md:text-t2 font-bold mb-4 text-brown-700">{$t('school.conference')}</h2>
