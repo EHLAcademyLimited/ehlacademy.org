@@ -9,9 +9,7 @@
 	import hk from '../locales/hk.js'
 	import {addMessages, init} from 'svelte-i18n'
 	import {page} from "$app/stores";
-	const page_without_offset = ['/product/animated-library', '/product/ai-tool', '/programme/3050', '/programme/3050-register', '/organisation/school', '/organisation/tutor-center']
-	$: is_school = $page.url.pathname === '/organisation/school'
-	$: is_edu_center = $page.url.pathname === '/organisation/tutor-center'
+	const page_without_offset = ['/product/animated-library', '/product/ai-tool', '/programme/3050', '/programme/3050-register', '/school', '/organisation/tutor-center']
 	$: is_offset = !page_without_offset.includes($page.url.pathname)
 	addMessages('en', en)
 	addMessages('hk', hk)
