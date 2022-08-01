@@ -7,6 +7,8 @@
 	import {getContext} from 'svelte'
 	const {open} = getContext('simple-modal')
 	import {t, locale} from 'svelte-i18n'
+	const {openModal, closeModal} = getContext('simple-modal')
+	import SchoolLoginDialog from "../../lib/school/SchoolLoginDialog.svelte";
 
 	const showVideo = (id) => {
 		open(Youtube, {id})
@@ -18,12 +20,14 @@
 			href: 'https://id.ehlacademy.org',
 			dot_color: 'bg-yellow-500',
 			bg_color: 'bg-brown-500',
+			role: 'student'
 		},
 		{
 			title: 'school.teacher_login',
 			href: 'https://teach.ehlacademy.org',
 			dot_color: 'bg-red-500',
 			bg_color: 'bg-brown-700',
+			role: 'teacher'
 		}
 	]
 
@@ -37,6 +41,15 @@
 			youtube_id: 'MODs6ghKO0A'
 		}
 	]
+
+	const onLogin = (l) => {
+		openModal(SchoolLoginDialog, {
+			role: l.role
+		}, {
+			width: '95%',
+			maxWidth: '400px'
+		})
+	}
 </script>
 
 <div class="relative overflow-hidden">
@@ -58,13 +71,13 @@
 
 <div class="grid grid-cols-2 mt-auto text-white">
 	{#each logins as l}
-		<a href={`${l.href}?lang=${$locale}`} target="_blank" class="{l.bg_color} flex items-center justify-center h-20 md:h-32 hover:bg-brown-400a">
+		<button on:click={() => {onLogin(l)}} target="_blank" class="{l.bg_color} flex items-center justify-center h-20 md:h-32 hover:bg-brown-400a">
 			<div class="flex items-center">
 				<div class="w-3 h-3 {l.dot_color} rounded-full"></div>
 				<p class="mx-3 text-p2 md:text-p3 font-bold">{$t(l.title)}</p>
 				<Icon className="w-3" name="right"/>
 			</div>
-		</a>
+		</button>
 	{/each}
 </div>
 

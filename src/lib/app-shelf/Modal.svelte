@@ -37,7 +37,8 @@
 		transitionWindow,
 		transitionWindowProps,
 		overflow: 'auto',
-		width: '90%'
+		width: '90%',
+		maxWidth: ''
 	};
 	let state = { ...defaultState };
 
@@ -59,6 +60,7 @@
 	$: currentTransitionBg = state.transitionBg;
 	$: currentTransitionWindow = state.transitionWindow;
 	$: width = state.width || 'auto'
+	$: maxWidth = state.maxWidth || 'auto'
 	let padding = '1em'
 	let bg_class = 'bg-white'
 	let overflow = 'auto'
@@ -136,7 +138,7 @@
 					transition:currentTransitionBg={state.transitionBgProps}
 					style={cssBg}
 	>
-		<div class="relative m-8 max-h-full" style="width: {width}" bind:this={wrap}>
+		<div class="relative m-2 max-h-full" style="width: {width}; max-width:{maxWidth}" bind:this={wrap}>
 			<div
 							class="relative max-w-full max-h-full m-8 rounded {bg_class}"
 							transition:currentTransitionWindow={state.transitionWindowProps}
