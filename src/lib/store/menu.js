@@ -59,7 +59,7 @@ export default readable({
 		},
 		{
 			label: 'nav.school_corner',
-			href: '/organisation/school',
+			href: '/school',
 			no_children: true,
 			children: []
 		},
