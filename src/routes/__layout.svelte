@@ -2,6 +2,7 @@
 	import '../styles/tailwind-output.css';
 	import Modal from '$lib/app-shelf/Modal.svelte';
 	import Toast from "$lib/app-shelf/Toast.svelte";
+	import Footer from "../lib/app-shelf/Footer.svelte";
 	import Nav from "$lib/app-shelf/Nav.svelte";
 
 	import en from '../locales/en.js'
@@ -25,5 +26,6 @@
 		<main class:sm:pt-20={is_offset} class:pt-12={is_offset}>
 			<slot></slot>
 		</main>
+		<Footer/>
 	</Modal>
 </Toast>
