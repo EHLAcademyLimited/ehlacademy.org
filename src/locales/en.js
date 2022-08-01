@@ -189,7 +189,7 @@ export default {
 		subscribe: {
 			title: 'Unparalleled Reading Solution',
 			desc: 'Start your journey now. <a href="/premium" class="text-regal-red-500 border-b-2 border-current">Checkout our package</a>.',
-			if_school: 'We tailor special FREE reading programmes for <span class="text-regal-red-500 font-bold">schools</span>. For details please go to <a href="/organisation/school" class="text-regal-red-500 border-b-2 border-current"> school corner</a>'
+			if_school: 'We tailor special FREE reading programmes for <span class="text-regal-red-500 font-bold">schools</span>. For details please go to <a href="/school" class="text-regal-red-500 border-b-2 border-current"> school corner</a>'
 		}
 	},
 	ai: {

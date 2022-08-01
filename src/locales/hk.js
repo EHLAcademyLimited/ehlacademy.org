@@ -287,7 +287,7 @@ export default {
 			desc_2: '該系統具有強大的功能，可幫助學生提高學習效率並避免盲目操練。系統根據學習弱項而智能推送的針對性練習則可幫助學生高效清除弱點。',
 		},
 		subscribe: {
-			school: '我們為學校提供特別訂制的人工智輔助能學習計劃，詳情請前往<a href="/organisation/school" class="text-red-500">學校專區</a>'
+			school: '我們為學校提供特別訂制的人工智輔助能學習計劃，詳情請前往<a href="/school" class="text-red-500">學校專區</a>'
 		}
 	},
 	l_elite: {
