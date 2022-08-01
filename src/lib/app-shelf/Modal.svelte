@@ -36,7 +36,8 @@
 		transitionBgProps,
 		transitionWindow,
 		transitionWindowProps,
-		overflow: 'auto'
+		overflow: 'auto',
+		width: '90%'
 	};
 	let state = { ...defaultState };
 
@@ -135,9 +136,9 @@
 					transition:currentTransitionBg={state.transitionBgProps}
 					style={cssBg}
 	>
-		<div class="relative m-4 max-h-full" bind:this={wrap}>
+		<div class="relative m-8 max-h-full" style="width: {width}" bind:this={wrap}>
 			<div
-							class="relative max-w-full max-h-full m-4 rounded {bg_class}"
+							class="relative max-w-full max-h-full m-8 rounded {bg_class}"
 							transition:currentTransitionWindow={state.transitionWindowProps}
 							on:introstart={onOpen}
 							on:outrostart={onClose}
@@ -145,7 +146,7 @@
 							on:outroend={onClosed}
 							style={cssWindow}
 			>
-				<div class="relative overflow-auto" style="{cssContent}; width: {width}; padding: {padding}; overflow: {state.overflow}; max-height: calc(100vh - 4rem)">
+				<div class="relative overflow-auto" style="{cssContent}; padding: {padding}; overflow: {state.overflow}; max-height: calc(100vh - 4rem)">
 					{#if state.closeButton}
 						<button class="z-50 flex w-10 h-10 absolute right-2 top-2 rounded-full bg-white items-center justify-center hover:bg-blue-500 hover:text-white" on:click={close}>
 							<Icon name="close" className="w-4"/>

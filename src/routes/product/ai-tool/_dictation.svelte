@@ -30,7 +30,9 @@
 		en: 'vwQfr5oD-Lc'
 	}
 	const showVideo = () => {
-		open(Youtube, {id: video_id[$locale]})
+		open(Youtube, {id: video_id[$locale]}, {
+			width: '90%'
+		})
 	}
 </script>
 
