@@ -30,7 +30,7 @@
 				<path d="M1 2.5L10 8L19 2.5" stroke="#007AFF" stroke-width="2" stroke-linecap="round"/>
 			</svg>
 			<p class="my-2">{$t('contact_us.email')}</p>
-			<p class="text-gray-400">support@ehla.com</p>
+			<p class="text-gray-400">support@ehlacademy.org</p>
 		</div>
 		<div>
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
