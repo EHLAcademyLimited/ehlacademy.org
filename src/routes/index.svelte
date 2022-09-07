@@ -77,23 +77,6 @@
 
 <ReaderSection/>
 
-<div class="bg-gray-100 text-brown-400a overflow-hidden">
-	<div class="max-w-screen-lg mx-auto px-6 py-12 md:py-20">
-		<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-4 lg:gap-12 items-center">
-			<div class="col-span-1">
-				<h1 class="text-p4 md:text-t2 font-bold mb-4">{$t('oxford_research.title')}</h1>
-				<p class="text-p2 md:text-p3 mb-4 text-brown-500">{$t('oxford_research.desc_short')}</p>
-				<a href="/programme/oxford-research">
-					<button class="rounded-full bg-brown-400a text-white hover:bg-red-500 py-4 px-8 md:text-p2 font-bold">{$t('oxford_research.more')}</button>
-				</a>
-			</div>
-			<div class="relative col-span-1">
-				<img class="w-full transform origin-left lg:scale-125 rounded" src="/oxford.jpg" alt="oxford">
-			</div>
-		</div>
-	</div>
-</div>
-
 <div class="bg-purple-500 text-white bg-right bg-no-repeat bg-size-baby-shape">
 	<div class="max-w-screen-lg mx-auto px-6 md:py-24 pt-8 pb-4 relative">
 		<img class="absolute -left-72 top-36 hidden md:block" src="/baby-app-shapes.png" alt="shapes">

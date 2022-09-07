@@ -22,19 +22,8 @@ export default readable({
 		},
 		{
 			label: 'nav.programme',
-			href: '',
-			children: [
-				{
-					label: 'nav.oxford_research',
-					href: '/programme/oxford-research',
-					image: '/oxford-icon.png'
-				},
-				{
-					label: 'nav.charity',
-					href: '/programme/charity',
-					image: '/paper-plane.png'
-				}
-			]
+			href: '/timeline',
+			children: []
 		},
 		{
 			label: 'nav.ai_and_app',

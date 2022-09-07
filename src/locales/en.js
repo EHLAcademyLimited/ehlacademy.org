@@ -1205,5 +1205,32 @@ export default {
 	or: 'or',
 	free: 'Free',
 	back: 'Back',
-	total: 'Total'
+	total: 'Total',
+	timeline: {
+		2022: {
+			h: 'EHLA “Paper Plane” schools pilot scheme',
+			p1: 'EHLA is dedicated to providing top class AI-powered solutions and trustworthy content for schools, teachers and students. In 2020, more than 100 schools participated in EHLA\'s various programmes specially designed for schools under the EHLA “Paper Plane” schools pilot scheme.',
+			p2: 'The FREE school scheme covers:',
+			1: 'AI-powered Writing Correction and Grading Function',
+			2: 'Dictation Quiz Auto-Grading Function (For teachers)',
+			3: 'Dictation AI Booster (For students)',
+			4: 'Reading Out-loud, Speaking & Listening AI Booster',
+			5: 'Vocabulary Learning & Spelling AI Booster',
+			6: 'Listening exercise (exam driven & others) resource',
+			7: 'Reading comprehension (exam driven) exercise resource',
+			8: 'Ai-powered reading solution - Unparalleled Animated Reading FREE Schemes for Schools'
+		},
+		2021: {
+			h: 'EHLA “Paper Plane” schools pilot scheme',
+			p1: 'EHLA is dedicated to providing top class AI-powered solutions and trustworthy content for schools, teachers and students. In 2020, more than 100 schools participated in EHLA\'s various programmes specially designed for schools under the EHLA “Paper Plane” schools pilot scheme.'
+		},
+		2019: {
+			h: 'EHLA “Paper Plane” Charitable Initiative Pulse-on',
+			p1: 'In September 2019, we launched the “Paper Plane” Charitable Initiative, accepting applications from students from grassroots families in the community for free access to many of EHLA\'s unique and high-quality learning and reading resources. This programme benefits a large population of students.'
+		},
+		2017: {
+			h: 'Academic Initiative with Oxford',
+			p1: 'On the 3rd of March 2017, EHLA and Oxford University Innovation Limited entered into an Academic Initiative Agreement stating that EHLA will sponsor initiatives in Oxford University’s Department of Education, aimed at and centred around the evaluation of certain topics proposed by both parties.'
+		}
+	}
 }
