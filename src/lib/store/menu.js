@@ -11,6 +11,10 @@ export default readable({
 					href: '/about/sharing'
 				},
 				{
+					label: 'nav.milestone',
+					href: '/about/milestone'
+				},
+				{
 					label: 'nav.about_ehla',
 					href: '/about/ehla'
 				},
@@ -19,11 +23,6 @@ export default readable({
 					href: '/about/contact'
 				}
 			]
-		},
-		{
-			label: 'nav.programme',
-			href: '/timeline',
-			children: []
 		},
 		{
 			label: 'nav.ai_and_app',

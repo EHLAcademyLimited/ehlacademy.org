@@ -29,7 +29,8 @@ export default {
 		school_corner_page_title: 'Schools - FREE Resources',
 		edu_centre: 'Education centres',
 		zoom_login_link: 'Zoom class',
-		home: 'Home'
+		home: 'Home',
+		milestone: 'Milestone',
 	},
 	footer: {
 		terms: 'Terms and condition',

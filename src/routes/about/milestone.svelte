@@ -1,7 +1,7 @@
 <script>
-	import Icon from "../lib/ui/Icon.svelte";
+	import Icon from "../../lib/ui/Icon.svelte";
 	import {_} from 'svelte-i18n'
-	import TimelineItem from "../lib/TimelineItem.svelte";
+	import TimelineItem from "../../lib/TimelineItem.svelte";
 </script>
 <div class="bg-cover pl-8 md:pl-24 py-16 text-white relative" style="background-image: url('/milestone.jpg')">
 	<div class="absolute z-10 inset-0 backdrop"></div>

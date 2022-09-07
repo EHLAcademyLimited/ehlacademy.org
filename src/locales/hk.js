@@ -29,7 +29,8 @@ export default {
 		school_corner_page_title: '學校專區 - 免費學與教工具及資源',
 		edu_centre: '教育中心專區',
 		zoom_login_link: 'Zoom網課',
-		home: '首頁'
+		home: '首頁',
+		milestone: '業務里程碑',
 	},
 	footer: {
 		terms: '條款細則',
