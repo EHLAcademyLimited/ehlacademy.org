@@ -13,7 +13,7 @@
 			<p class="text-p3">{$t('about_ehla.desc_2')}</p>
 		</div>
 		<div>
-			<img src="/team.jpg" alt="ehla-team" class="w-full rounded">
+			<img src="/ehla-teachers.jpg" alt="ehla-team" class="w-full rounded">
 		</div>
 	</div>
 </div>
