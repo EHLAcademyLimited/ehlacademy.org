@@ -1207,6 +1207,7 @@ export default {
 	back: 'Back',
 	total: 'Total',
 	timeline: {
+		title: 'MILESTONES',
 		2022: {
 			h: 'EHLA “Paper Plane” schools pilot scheme',
 			p1: 'EHLA is dedicated to providing top class AI-powered solutions and trustworthy content for schools, teachers and students. In 2020, more than 100 schools participated in EHLA\'s various programmes specially designed for schools under the EHLA “Paper Plane” schools pilot scheme.',
