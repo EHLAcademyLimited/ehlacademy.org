@@ -62,12 +62,6 @@ export default readable({
 			href: '/school',
 			no_children: true,
 			children: []
-		},
-		{
-			label: 'nav.zoom_login_link',
-			href: 'https://www.ehla-class.org',
-			no_children: true,
-			children: []
 		}
 	],
 	home: {

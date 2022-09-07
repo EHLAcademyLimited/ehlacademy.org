@@ -15,7 +15,7 @@
 	addMessages('hk', hk)
 	init({
 		fallbackLocale: 'en',
-		initialLocale: 'hk'
+		initialLocale: 'en'
 	})
 </script>
 <Toast>

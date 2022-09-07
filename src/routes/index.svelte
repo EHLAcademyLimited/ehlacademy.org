@@ -64,7 +64,7 @@
 			<div class="col-span-1">
 				<h1 class="text-p4 md:text-t2 font-bold mb-4">{$t('school.corner')}</h1>
 				<p class="text-p2 md:text-p3 mb-4 text-brown-500">{$t('school.hero_desc')}</p>
-				<a href="/organisation/school">
+				<a href="/school">
 					<button class="rounded-full bg-brown-400a text-white hover:bg-red-500 py-4 px-8 md:text-p2 font-bold">{$t('oxford_research.more')}</button>
 				</a>
 			</div>
