@@ -69,7 +69,7 @@
 						{/if}
 					</Dropdown>
 				{/each}
-				<a target="_blank" href="https://ehla-class.com/{$locale}/home" class="cursor-pointer px-4 py-4 inline-flex items-center tracking-wide font-bold text-sm" class:text-white={is_school && !floated}>
+				<a target="_blank" href="https://ehla-class.com/login?locale={$locale}" class="cursor-pointer px-4 py-4 inline-flex items-center tracking-wide font-bold text-sm" class:text-white={is_school && !floated}>
 					<span class="whitespace-nowrap">{$t('nav.zoom_login_link')}</span>
 				</a>
 			</div>
