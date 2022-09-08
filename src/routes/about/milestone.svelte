@@ -5,7 +5,7 @@
 </script>
 <div class="bg-cover bg-center pl-8 md:pl-24 py-20 text-white relative" style="background-image: url('/milestone.jpeg')">
 	<div class="absolute z-10 inset-0 backdrop"></div>
-	<h1 class="mx-auto max-w-screen-lg z-20 relative text-t1 sm:text-h1 drop-shadow-xl">{$_('timeline.title')}</h1>
+	<h1 class="mx-auto max-w-screen-lg z-20 relative text-t1 sm:text-h1 drop-shadow-xl">{$_('nav.milestone')}</h1>
 </div>
 <div class="mx-auto max-w-screen-lg pr-2 text-gray-700 py-8">
 	<TimelineItem>

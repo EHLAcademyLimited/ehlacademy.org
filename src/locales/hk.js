@@ -30,7 +30,7 @@ export default {
 		edu_centre: '教育中心專區',
 		zoom_login_link: 'Zoom網課',
 		home: '首頁',
-		milestone: '業務里程碑',
+		milestone: '項目計劃',
 	},
 	footer: {
 		terms: '條款細則',
@@ -1207,7 +1207,6 @@ export default {
 	back: '返回',
 	total: '總共',
 	timeline: {
-		title: '業務里程碑',
 		2022: {
 			h: '擴大紙飛機學校免費計劃',
 			p1: '在2020年學校試點的基礎上，自2022年6月起，EHLA向學校免費發布了多項成熟的“AI驅動”學與教功能和獨有資源。此次擴大後的方案將大大減輕教師的工作量，有效提高 學生的學習效率。',
