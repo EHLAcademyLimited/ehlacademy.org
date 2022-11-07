@@ -406,6 +406,8 @@ export default {
 			'3': 'To help <span class="border-b-2 border-current italic">elite students</span> perfect their language proficiency, particularly in the areas of writing, reading and speaking, and prepare them for entry to the rich world of English literature.'
 		},
 		team: {
+			"title1": "Lovely Teachers at EHLA",
+			"title2": "TOP-NOTCH UK+US Teachers",
 			title: 'Team and background',
 			slogan: ' ',
 			desc: 'A team of leading educators, linguists, artificial intelligence (AI) experts and senior frontline teachers has been working together for years on a unique learning and teaching ecosystem, underpinned by a well-developed adaptive learning methodology, a number of pivotal and state-of-the-art AI technologies as well as authoritative content resources. The aim of the team has been to achieve a major breakthrough in improving the effectiveness of how English is taught to non-English speaking students and the efficiency with which these students learn.',
