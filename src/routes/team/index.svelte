@@ -415,9 +415,8 @@
 					<img src={tutor.profile_pic} alt={tutor.display_name} class="">
 				</div>
 				<div class="ml-4 md:ml-0">
-					<h3 class="mt-2 mb-1 text-2xl">{tutor.display_name}</h3>
+					<h3 class="mt-2 mb-1 text-p3">{tutor.display_name}</h3>
 					<p class="md:px-8 text-sm md:text-base">{$locale !== 'en' ? tutor.subtitle_alter : tutor.subtitle}</p>
-					<span class="text-sm text-blue-500">{$_('view_tutor')}</span>
 				</div>
 			</div>
 		{/each}

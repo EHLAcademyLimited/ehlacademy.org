@@ -7,6 +7,10 @@ export default readable({
 			href: '',
 			children: [
 				{
+					label: 'nav.top_team',
+					href: '/team'
+				},
+				{
 					label: 'nav.sharing',
 					href: '/about/sharing'
 				},
