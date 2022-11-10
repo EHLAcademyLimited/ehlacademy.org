@@ -6,7 +6,7 @@ export default {
 		index: 'EHLA | 學與教・人工智能・出版・研究',
 		index_desc: 'EHLA致力提供頂尖的學與教頂尖解決方案及可信賴的教育資源',
 		team_and_sharing: '團隊及分享',
-		top_team: '頂級團隊',
+		top_team: '教學團隊',
 		sharing: '分享',
 		about_ehla: '關於EHLA',
 		contact_us: '聯絡我們',

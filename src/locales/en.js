@@ -6,7 +6,7 @@ export default {
 		index: 'EHLA | Pedagogical・AI・Publishing・Research',
 		index_desc: 'EHLA provides top class teaching and learning solutions and trustworthy content',
 		team_and_sharing: 'Team & sharing',
-		top_team: 'Leading team',
+		top_team: 'Teaching Team',
 		sharing: 'Sharing',
 		about_ehla: 'About EHLA',
 		contact_us: 'Contact us',
