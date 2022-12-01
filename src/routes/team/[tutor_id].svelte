@@ -16,6 +16,7 @@
 </script>
 
 <script>
+	import Head from "../../lib/Head.svelte";
 	export let tutor
 	export let videos = []
 	let classroom = []
@@ -41,3 +42,5 @@
 </div>
 
 <Footer/>
+
+<Head title={tutor.display_name} description={tutor.description_alter} image={tutor.profile_pic}/>

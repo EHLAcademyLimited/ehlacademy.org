@@ -18,7 +18,7 @@ export default {
 		giant_leap_programme_internation_child: 'Native Reading & Speaking Leap Programme (3 - 12 years old)',
 		giant_leap_programme_school_base: 'School-based Stream',
 		giant_leap_programme_school_base_child: '3050 Leap Programme (mainstream students, P3-P6)',
-		oxford_research: 'Oxford academic research collaboration ',
+		oxford_research: 'Oxford academic research collaboration',
 		charity: 'Charitable scheme',
 		ai_and_app: 'AI & Applications',
 		ai_tool: 'AI-powered Tools & Solutions',

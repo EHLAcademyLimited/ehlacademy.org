@@ -20,6 +20,7 @@
 
 <script>
 	import {locale, _} from "svelte-i18n";
+	import Head from "../../lib/Head.svelte";
 	export let tutor_list
 </script>
 
@@ -50,3 +51,5 @@
 	</div>
 	{/if}
 </div>
+
+<Head title={$_('nav.top_team')}/>
