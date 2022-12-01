@@ -86,9 +86,9 @@
 							<img class="absolute inset-0 rounded" src="https://ehla-media-bucket.s3.ap-southeast-1.amazonaws.com/website2021/one-on-one/{item.href}.jpg" alt={item.title_en}>
 						{/if}
 					</div>
-					<h2 class="mt-2 text-blue-500 font-bold text-2xl">{item[`title_${$locale}`]}</h2>
+					<h2 class="mt-2 text-gray-700 font-bold text-2xl">{item[`title_${$locale}`]}</h2>
 					{#if item.subtitle_hk}
-						<p class="mt-1 text-blue-400 font-bold text-lg">{item[`subtitle_${$locale}`]}</p>
+						<p class="mt-1 text-gray-500 font-bold text-lg">{item[`subtitle_${$locale}`]}</p>
 					{/if}
 				</a>
 			</div>
