@@ -96,6 +96,4 @@
 	</div>
 </div>
 
-<Footer/>
-
 <Head title={$_('one_on_one')}/>

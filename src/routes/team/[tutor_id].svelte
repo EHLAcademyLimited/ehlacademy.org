@@ -37,30 +37,7 @@
 </div>
 
 <div class="container my-4">
-	<div class="grid sm:grid-cols-2 grid-cols-1 gap-4">
-		{#if videos}
-		{#each videos as v}
-			<div>
-				<p class="text-indigo-700 mb-2">{v[`title_${$locale}`]}</p>
-				{#if v.link.startsWith('https')}
-					<video preload="metadata" controls playsinline class="rounded w-full">
-						<source src="{v.link}#t=0.1" type="video/mp4">
-					</video>
-				{:else}
-					<div class="bg-black w-full rounded relative" style="padding-top: 56.25%">
-						<iframe src="https://www.youtube.com/embed/{v.link}"
-						        class="absolute inset-0 w-full h-full"
-						        widget_referrer="1"
-						        title="YouTube video player" frameborder="0"
-						        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
-						</iframe>
-					</div>
-				{/if}
-			</div>
-		{/each}
-		{/if}
-	</div>
 </div>
 
 <Footer/>
