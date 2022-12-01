@@ -34,10 +34,10 @@
 
 	<div class="bg-gray-200 text-left sm:text-center">
 		<div class="max-w-lg mx-auto px-4 py-8">
-			<div class="block sm:flex justify-center mb-2">
-				<a href="/legal/terms" class="text-gray-400 hover:text-gray-700">{$t('footer.terms')}</a>
-				<a href="/legal/privacy" class="text-gray-400 hover:text-gray-700 ml-4">{$t('footer.privacy')}</a>
-			</div>
+<!--			<div class="block sm:flex justify-center mb-2">-->
+<!--				<a href="/legal/terms" class="text-gray-400 hover:text-gray-700">{$t('footer.terms')}</a>-->
+<!--				<a href="/legal/privacy" class="text-gray-400 hover:text-gray-700 ml-4">{$t('footer.privacy')}</a>-->
+<!--			</div>-->
 			<p>© {new Date().getFullYear()} {$t('footer.copyright')}</p>
 		</div>
 	</div>

@@ -11,6 +11,10 @@ export default readable({
 					href: '/team'
 				},
 				{
+					label: 'nav.course',
+					href: '/course'
+				},
+				{
 					label: 'nav.sharing',
 					href: '/about/sharing'
 				},

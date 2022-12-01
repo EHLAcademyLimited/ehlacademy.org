@@ -5,8 +5,9 @@ export default {
 	nav: {
 		index: 'EHLA | 學與教・人工智能・出版・研究',
 		index_desc: 'EHLA致力提供頂尖的學與教頂尖解決方案及可信賴的教育資源',
-		team_and_sharing: '團隊及分享',
+		team_and_sharing: '團隊與課程',
 		top_team: '教學團隊',
+		course: '定製精英課程',
 		sharing: '分享',
 		about_ehla: '關於EHLA',
 		contact_us: '聯絡我們',
@@ -1234,5 +1235,18 @@ export default {
 			h: 'EHLA和牛津大學創新科技有限公司的學術計劃',
 			p1: 'EHLA和牛津大學創新科技有限公司 Oxford University Innovation Limited 於2017年3月簽訂了學術研究計劃協議，對由牛津大學或EHLA所提出的議題展開共同研究合作計劃。'
 		}
-	}
+	},
+	"enquiry": "報名查詢",
+	"lesson_target": "對象學生",
+	"lesson_target_writing": "對象學生： 具有一定寫作能力的學生",
+	"lesson_format": "形式：一對一 Zoom",
+	"lesson_duration_30": "課時: 每節課30分鐘",
+	"lesson_duration_40": "課時: 每節課40分鐘",
+	"reading-and-speaking-for-kindergarten": "小精英級K班課程",
+	"english-language-leap-programme": "補底增強(特製) 英文躍升計劃",
+	"exam-prep-intensive-english-programme": "呈分試英文特訓外教課程",
+	"story-telling-and-speaking": "英文故事閱讀與會話課堂",
+	"elite-creative-writing-class": "精英躍升英文寫作課程",
+	"reading-and-speaking-elite-programme": "精英閱讀與主題對談",
+	"reading-writing-and-speaking-bridging-uk": "閱讀、寫作與主題對話"
 }

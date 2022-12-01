@@ -3,32 +3,22 @@ const colors = require('tailwindcss/colors')
 module.exports = {
 	content: ["./src/**/*.{html,js,svelte}"],
 	theme: {
-		fontSize: {
-			'xxs': ['0.6rem'],
-			'xs': ['0.75rem'],
-			'sm': ['0.875rem'],
-			DEFAULT: ['1rem'],
-			'p2': ['1.125rem'],
-			'p3': ['1.375rem'],
-			'p4': ['1.625rem'],
-			't1': ['1.875rem', {lineHeight: '1.1'}],
-			't2': ['2.5rem', {lineHeight: '1.1'}],
-			't3': ['3.125rem', {lineHeight: '1'}],
-			'h1': ['3.75rem', {lineHeight: '1'}],
-			'h2': ['5rem', {lineHeight: '1'}],
-			'h3': ['5.625rem', {lineHeight: '1'}]
-		},
-		borderRadius: {
-			none: '0px',
-			sm: '0.25rem',
-			DEFAULT: '0.5rem',
-			lg: '1rem',
-			xl: '2rem',
-			xxl: '3rem',
-			xxxl: '4rem',
-			full: '9999px',
-		},
 		extend: {
+			fontSize: {
+				'xxs': ['0.6rem'],
+				'xs': ['0.75rem'],
+				'sm': ['0.875rem'],
+				DEFAULT: ['1rem'],
+				'p2': ['1.125rem'],
+				'p3': ['1.375rem'],
+				'p4': ['1.625rem'],
+				't1': ['1.875rem', {lineHeight: '1.1'}],
+				't2': ['2.5rem', {lineHeight: '1.1'}],
+				't3': ['3.125rem', {lineHeight: '1'}],
+				'h1': ['3.75rem', {lineHeight: '1'}],
+				'h2': ['5rem', {lineHeight: '1'}],
+				'h3': ['5.625rem', {lineHeight: '1'}]
+			},
 			colors: {
 				'regal-blue': {
 					'100': '#ECF3FF',

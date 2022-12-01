@@ -5,8 +5,9 @@ export default {
 	nav: {
 		index: 'EHLA | Pedagogical・AI・Publishing・Research',
 		index_desc: 'EHLA provides top class teaching and learning solutions and trustworthy content',
-		team_and_sharing: 'Team & sharing',
+		team_and_sharing: 'Team & courses',
 		top_team: 'Teaching Team',
+		course: 'Bespoke Elite PGME',
 		sharing: 'Sharing',
 		about_ehla: 'About EHLA',
 		contact_us: 'Contact us',
@@ -17,7 +18,7 @@ export default {
 		giant_leap_programme_internation_child: 'Native Reading & Speaking Leap Programme (3 - 12 years old)',
 		giant_leap_programme_school_base: 'School-based Stream',
 		giant_leap_programme_school_base_child: '3050 Leap Programme (mainstream students, P3-P6)',
-		oxford_research: 'Oxford academic research collaboration ',
+		oxford_research: 'Oxford academic research collaboration',
 		charity: 'Charitable scheme',
 		ai_and_app: 'AI & Applications',
 		ai_tool: 'AI-powered Tools & Solutions',
@@ -1235,5 +1236,19 @@ export default {
 			h: 'Academic Initiative with Oxford',
 			p1: 'On the 3rd of March 2017, EHLA and Oxford University Innovation Limited entered into an Academic Initiative Agreement stating that EHLA will sponsor initiatives in Oxford University’s Department of Education, aimed at and centred around the evaluation of certain topics proposed by both parties.'
 		}
-	}
+	},
+	"enquiry": "Enquiry",
+	"lesson_target": "Target",
+	"lesson_target_writing": "Target students: Students with basic writing skills.",
+	"lesson_format": "Lesson format: 1-1 zoom class",
+	"lesson_duration_30": "Lesson duration: 30 minutes",
+	"lesson_duration_40": "Lesson duration: 40 minutes",
+	"lesson_duration_30_40": "Lesson duration: 30/40 minutes",
+	"reading-and-speaking-for-kindergarten": "Reading & Speaking Programme (below 6 yro)",
+	"english-language-leap-programme": "English Language Leap Programme",
+	"exam-prep-intensive-english-programme": "Exam-prep (呈分試) Intensive English Programme",
+	"story-telling-and-speaking": "Story telling and speaking",
+	"elite-creative-writing-class": "Elite Creative Writing Class",
+	"reading-and-speaking-elite-programme": "Reading & Speaking Elite Programme",
+	"reading-writing-and-speaking-bridging-uk": "Reading & Speaking Elite Programme",
 }
