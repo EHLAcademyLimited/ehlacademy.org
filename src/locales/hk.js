@@ -7,6 +7,7 @@ export default {
 		index_desc: 'EHLA致力提供頂尖的學與教頂尖解決方案及可信賴的教育資源',
 		team_and_sharing: '團隊及分享',
 		top_team: '教學團隊',
+		course: '定製精英課程',
 		sharing: '分享',
 		about_ehla: '關於EHLA',
 		contact_us: '聯絡我們',

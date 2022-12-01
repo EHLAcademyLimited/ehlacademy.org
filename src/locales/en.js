@@ -7,6 +7,7 @@ export default {
 		index_desc: 'EHLA provides top class teaching and learning solutions and trustworthy content',
 		team_and_sharing: 'Team & sharing',
 		top_team: 'Teaching Team',
+		course: 'Course',
 		sharing: 'Sharing',
 		about_ehla: 'About EHLA',
 		contact_us: 'Contact us',
