@@ -5,9 +5,9 @@ export default {
 	nav: {
 		index: 'EHLA | Pedagogical・AI・Publishing・Research',
 		index_desc: 'EHLA provides top class teaching and learning solutions and trustworthy content',
-		team_and_sharing: 'Team & sharing',
+		team_and_sharing: 'Team & courses',
 		top_team: 'Teaching Team',
-		course: 'Course',
+		course: 'Bespoke Elite PGME',
 		sharing: 'Sharing',
 		about_ehla: 'About EHLA',
 		contact_us: 'Contact us',
