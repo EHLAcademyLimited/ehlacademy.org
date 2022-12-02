@@ -32,7 +32,7 @@
 	})
 
 	const changeLang = (lang) => {
-		const url = $page.url.origin + `?lang=${lang}`
+		const url = $page.url.origin + $page.url.pathname + `?lang=${lang}`
 		goto(url, {replaceState: true})
 		locale.set(lang)
 	}
