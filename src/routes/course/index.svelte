@@ -14,7 +14,7 @@
 			image: '/one-on-one/gcse.jpg'
 		},
 		{
-			title_en: 'Elite Writing (Secondary)',
+			title_en: 'Bespoke Elite Writing Programme',
 			title_hk: '中學英文精英寫作',
 			href: 'elite-writing',
 			image: '/one-on-one/elite.jpg'

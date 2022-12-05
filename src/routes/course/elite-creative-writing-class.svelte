@@ -18,9 +18,9 @@
 	<img src="/one-on-one/creative-writing.jpeg" alt="elite" class="w-96 mx-auto mb-4 max-w-full">
 	<h1 class="text-center mb-1 text-amber-700">
 		{#if $locale === 'en'}
-			Elite Creative Writing Class (Primary School)
+			Elite Native Writing (8-11 yro)
 		{:else}
-			小學英文精英寫作課程
+			英文精英寫作課程 (8-11 yro)
 		{/if}
 	</h1>
 
