@@ -20,8 +20,8 @@
 			image: '/one-on-one/elite.jpg'
 		},
 		{
-			title_en: 'Elite Creative Writing (Primary)',
-			title_hk: '小學英文精英寫作',
+			title_en: 'Elite Native Writing (8-11yro)',
+			title_hk: '英文精英寫作 (8-11yro)',
 			href: 'elite-creative-writing-class',
 			image: '/one-on-one/creative-writing.jpeg'
 		},
@@ -30,6 +30,12 @@
 			title_hk: '英國文學',
 			href: 'elite-english-literature',
 			image: '/one-on-one/elite-eng-literature.png'
+		},
+		{
+			title_en: 'Elite English Literature (8-11yro)',
+			title_hk: '英國文學(8-11yro)',
+			href: 'elite-english-literature-for-8-11',
+			image: '/one-on-one/eng-literature-primary.jpeg'
 		},
 		{
 			title_en: 'DSE Speaking',
