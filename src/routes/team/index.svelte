@@ -21,8 +21,23 @@
 <script>
 	import {locale, _} from "svelte-i18n";
 	import Head from "../../lib/Head.svelte";
+	import FurlongBanner from "../../lib/static-section/FurlongBanner.svelte";
 	export let tutor_list
 </script>
+<FurlongBanner/>
+<div class="container my-8">
+	<p class="text-2xl mb-4">
+		{#if $locale === 'en'}
+			Managing the Quality of EHLA English Language Teaching and Learning Resources
+		{:else}
+			如何確保EHLA英文教學資源的一致性、可靠性與權威性
+		{/if}
+	</p>
+	<div class="relative">
+		<div style="padding-top: 56%"></div>
+		<iframe class="absolute w-full h-full inset-0" src="https://www.youtube.com/embed/7ztKjnaBNek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
 
 <div class="bg-[#FFE173] overflow-hidden text-center">
 	<div class="max-w-screen-lg mx-auto py-8 md:py-12 relative">
@@ -33,7 +48,6 @@
 		</div>
 	</div>
 </div>
-
 <div class="container py-8 md:py-12 text-slate-700">
 	{#if tutor_list}
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-8">

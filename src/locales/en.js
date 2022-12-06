@@ -8,7 +8,7 @@ export default {
 		team_and_sharing: 'Team & courses',
 		top_team: 'Teaching Team',
 		course: 'Bespoke Elite PGME',
-		sharing: 'Sharing',
+		sharing: 'Sharing from Top Educators',
 		about_ehla: 'About EHLA',
 		contact_us: 'Contact us',
 		programme: 'Programmes',
@@ -1158,7 +1158,7 @@ export default {
 		desc_2: 'EHLA is dedicated to providing top class solutions and trustworthy content for schools, educational organisations, teachers, parents and students.'
 	},
 	sharing: {
-		title: 'Sharing'
+		title: 'Sharing from Top Educators'
 	},
 	subscription: {
 		ai: {

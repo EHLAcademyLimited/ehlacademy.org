@@ -8,7 +8,7 @@ export default {
 		team_and_sharing: '團隊與課程',
 		top_team: '教學團隊',
 		course: '定製精英課程',
-		sharing: '分享',
+		sharing: '頂級教育家的分享',
 		about_ehla: '關於EHLA',
 		contact_us: '聯絡我們',
 		programme: '項目計劃',
