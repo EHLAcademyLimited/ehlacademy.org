@@ -106,6 +106,44 @@
 	</div>
 </div>
 
+<div id="writing" class="bg-brown-100a bg-no-repeat bg-right-bottom bg-size" style="background-image: url('/writing0bg.png');">
+	<div class="max-w-screen-lg mx-auto px-6 py-12">
+		<div class="mb-4 md:mb-8 max-w-screen-sm">
+			<h2 class="font-bold text-t1 sm:text-t2 mt-2 mb-4 text-brown-400a">
+				DSE Oral Mock & Intensive Training Programme (Paper 4)
+			</h2>
+			<p class="text-p2 sm:text-p3 font-bold text-brown-400">DSE Oral Mock & Intensive Training for Form 6 students</p>
+			<p class="text-p2 sm:text-p3 font-bold text-brown-400">Pre-DSE Oral Intensive Training for Form 5 / Form 4 students</p>
+		</div>
+		<p class="text-p2 sm:text-p3 font-bold text-brown-400 mb-6">1 on 5 Zoom session /40 minutes Facilitator: NET teachers from EHLA</p>
+		<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-16">
+			<div>
+				<p class="my-2">Each session covers one HOT topic</p>
+				<ul class="list-disc list-inside my-2">
+					<li>Hot topics for current issues</li>
+					<li>Guidance before mock</li>
+					<li>Mock group discussion & individual response</li>
+					<li>Evaluation after mock</li>
+					<li>Key notes available</li>
+				</ul>
+				<div class="my-4 text-lg">
+					<p><b class="text-red-700">HK$680</b> ONLY for 5 sessions per student</p>
+					<p><b class="text-red-700">HK$1180</b> ONLY for 10 sessions per student</p>
+				</div>
+				<a href="https://forms.gle/GLtYmVf8pZB7d1fe9" target="_blank" class="inline-block my-4 bg-orange-500 text-white px-4 py-2 rounded text-xl">
+					Enrol now
+				</a>
+			</div>
+			<div>
+				<div class="bg-gray-500 pt-[56%] mt-8">
+
+				</div>
+<!--				<img src="/writing.png" alt="writing" class="w-full">-->
+			</div>
+		</div>
+	</div>
+</div>
+
 <!--<Writing/>-->
 
 <Package/>
