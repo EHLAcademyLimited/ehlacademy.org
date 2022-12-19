@@ -32,7 +32,7 @@
 		<ul>
 			<li>一系列流行的當代兒童故事（例如 Julia Donaldson、Dick King Smith、Anthony Browne、Jill Tomlinson）</li>
 			<li>一系列經典兒童故事（例如 Enid Blyton、Roald Dahl、Judith Kerr、“小王子”、“小熊維尼”、童話/寓言）</li>
-			<li>兒童詩歌（例如俳句、書法、打油詩、敘事詩、肯寧、自由詩）。</li>
+			<li>兒童詩歌（例如俳句、書法、打油詩、敘事詩、比喻複合辭、自由詩）。</li>
 			<li>兒童短劇。</li>
 			<li>非小說類：一系列非小說類文本，包括有關動物、身體、空間、天氣和季節以及恐龍等主題的信息文本； 名人傳記； 新聞報導； 一封信或邀請函、一份食譜和一篇日記。</li>
 		</ul>
