@@ -26,6 +26,12 @@
 			image: '/one-on-one/creative-writing.jpeg'
 		},
 		{
+			title_en: 'English Literature and Elite Writing (6-7 yro)',
+			title_hk: '英國文學與精英寫作(6-7歲)',
+			href: 'elite-english-literature-6-7',
+			image: '/one-on-one/elite-eng-literature-6-7.jpeg'
+		},
+		{
 			title_en: 'Elite English Literature',
 			title_hk: '英國文學',
 			href: 'elite-english-literature',
