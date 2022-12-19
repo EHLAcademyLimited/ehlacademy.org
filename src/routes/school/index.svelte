@@ -106,6 +106,55 @@
 	</div>
 </div>
 
+<div id="writing" class="bg-brown-100a bg-no-repeat bg-right-bottom bg-size" style="background-image: url('/writing0bg.png');">
+	<div class="max-w-screen- mx-auto px-6 py-12">
+		<div class="mb-4 md:mb-8">
+			<h2 class="font-bold text-t1 sm:text-t2 mt-2 mb-4 text-brown-400a">
+				DSE Oral Mock & Intensive Training Programme (Paper 4)
+			</h2>
+			<ul class="list-disc list-inside">
+				<li class="text-p2 sm:text-p3 font-bold text-brown-400 leading-tight">
+					DSE Oral Mock & Intensive Training for Form 6 students
+				</li>
+				<li class="text-p2 sm:text-p3 font-bold text-brown-400 leading-tight">
+					Pre-DSE Oral Intensive Training for Form 5 / Form 4 students
+				</li>
+			</ul>
+		</div>
+		<p class="text-p2 sm:text-p3 font-bold text-orange-600 mb-6">
+			1 on 5 Zoom session /40 minutes<br>
+			Facilitator: NET teachers from EHLA
+		</p>
+		<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-16">
+			<div>
+				<p class="my-2">Each session covers one HOT topic</p>
+				<ul class="list-disc list-inside my-2">
+					<li>Hot topics for current issues</li>
+					<li>Guidance before mock</li>
+					<li>Mock group discussion & individual response</li>
+					<li>Evaluation after mock</li>
+					<li>Key notes available</li>
+				</ul>
+				<div class="my-4 text-lg">
+					<p><b class="text-red-700">HK$680</b> ONLY for 5 sessions per student</p>
+					<p><b class="text-red-700">HK$1180</b> ONLY for 10 sessions per student</p>
+				</div>
+				<a href="https://forms.gle/GLtYmVf8pZB7d1fe9" target="_blank" class="inline-block my-4 bg-orange-500 text-white px-4 py-2 rounded text-xl">
+					Enrol now
+				</a>
+			</div>
+			<div>
+				<div class="bg-gray-500 pt-[56%] mt-8 relative">
+					<video class="absolute inset-0"
+					       controls
+					       src="https://ehla-media-bucket.s3.ap-southeast-1.amazonaws.com/usermodel_School/Pre-DSE+sample.mp4.mp4" alt="">
+				</div>
+				<p class="italic mt-2 leading-tight text-sm">5** Pre-DSE Oral Intensive Training - True Class Recording (extract)</p>
+			</div>
+		</div>
+	</div>
+</div>
+
 <!--<Writing/>-->
 
 <Package/>

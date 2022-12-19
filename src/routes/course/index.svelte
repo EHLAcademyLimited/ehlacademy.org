@@ -1,5 +1,5 @@
 <script context="module">
-	export const prerender = true;
+	export const prerender = false;
 	import {locale, _} from 'svelte-i18n'
 	import Head from '$lib/Head.svelte'
 	import Footer from '$lib/app-shelf/Footer.svelte'
@@ -24,6 +24,12 @@
 			title_hk: '英文精英寫作 (8-11yro)',
 			href: 'elite-creative-writing-class',
 			image: '/one-on-one/creative-writing.jpeg'
+		},
+		{
+			title_en: 'English Literature and Elite Writing (6-7 yro)',
+			title_hk: '英國文學與精英寫作(6-7歲)',
+			href: 'elite-english-literature-6-7',
+			image: '/one-on-one/elite-eng-literature-6-7.jpeg'
 		},
 		{
 			title_en: 'Elite English Literature',

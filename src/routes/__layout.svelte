@@ -11,11 +11,12 @@
 	import {page} from "$app/stores";
 	const page_without_offset = ['/product/animated-library', '/product/ai-tool', '/programme/3050', '/programme/3050-register', '/school', '/organisation/tutor-center']
 	$: is_offset = !page_without_offset.includes($page.url.pathname)
+	let lang = $page.url.searchParams.get('lang')
 	addMessages('en', en)
 	addMessages('hk', hk)
 	init({
 		fallbackLocale: 'en',
-		initialLocale: 'en'
+		initialLocale: lang
 	})
 </script>
 <Toast>
