@@ -1,6 +1,10 @@
 <script>
 	import {_, locale} from "svelte-i18n";
 	import Icon from "$lib/ui/Icon.svelte";
+	import Head from "../../lib/Head.svelte";
+	let title = $locale === 'en' ?
+			'English Literature and Elite Writing (6-7 yro)' :
+			'英國文學與精英寫作(6-7歲)'
 </script>
 <div class="container py-4">
 	<a href="/course" class="text-blue-500 mb-4 flex whitespace-nowrap">
@@ -9,11 +13,7 @@
 	</a>
 	<img src="/one-on-one/elite-eng-literature-6-7.jpeg" alt="elite" class="w-96 rounded-lg mb-4 mx-auto max-w-full">
 	<h1 class="text-center mb-1 text-amber-700">
-		{#if $locale === 'en'}
-			English Literature and Elite Writing (6-7 yro)
-		{:else}
-			英國文學與精英寫作(6-7歲)
-		{/if}
+		{title}
 	</h1>
 	<p class="text-center mb-2 text-lg text-amber-700">Years 2-3 (Age 6-7 years).</p>
 	<p class="text-center mb-2 text-lg text-amber-700">Based upon the British Curriculum</p>
@@ -56,4 +56,4 @@
 	}
 </style>
 
-
+<Head {title}/>
