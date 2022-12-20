@@ -5,8 +5,15 @@
 
 	const footer = [
 		[$menu_items.main[0]],
-		[$menu_items.main[1]],
-		[$menu_items.main[2]]
+		[
+			$menu_items.main[1],
+			{
+				label: 'nav.guidance',
+				href: '/guidance',
+				no_children: true,
+				children: []
+			}
+		]
 	]
 </script>
 
