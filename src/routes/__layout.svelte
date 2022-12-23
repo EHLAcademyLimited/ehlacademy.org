@@ -1,5 +1,4 @@
 <script>
-	import '../styles/tailwind-output.css';
 	import Modal from '$lib/app-shelf/Modal.svelte';
 	import Toast from "$lib/app-shelf/Toast.svelte";
 	import Footer from "../lib/app-shelf/Footer.svelte";
