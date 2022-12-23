@@ -12,7 +12,8 @@
     "preview": "svelte-kit preview",
     "prepare": "svelte-kit sync",
     "check": "svelte-check --tsconfig ./jsconfig.json",
-    "check:watch": "svelte-check --tsconfig ./jsconfig.json --watch"
+    "check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
+    "start": "yarn build"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^1.0.0",
