@@ -12,6 +12,7 @@ export default {
 		about_ehla: 'About EHLA',
 		contact_us: 'Contact us',
 		programme: 'Programmes',
+		guidance: 'Guides & rules',
 		giant_leap_programme: 'English Learning Leap Programme',
 		giant_leap_programme_concept: 'Background and breakthroughs',
 		giant_leap_programme_internation: 'International Stream',

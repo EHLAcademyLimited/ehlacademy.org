@@ -12,6 +12,7 @@ export default {
 		about_ehla: '關於EHLA',
 		contact_us: '聯絡我們',
 		programme: '項目計劃',
+		guidance: '守則與指南',
 		giant_leap_programme: '英文躍升研究計劃',
 		giant_leap_programme_concept: '計劃背景與突破',
 		giant_leap_programme_internation: '國際課程',
