@@ -7,6 +7,7 @@
 
 	import en from '../locales/en.js'
 	import hk from '../locales/hk.js'
+	import cn from '../locales/cn.js'
 	import {addMessages, init} from 'svelte-i18n'
 	import {page} from "$app/stores";
 	const page_without_offset = ['/product/animated-library', '/product/ai-tool', '/programme/3050', '/programme/3050-register', '/school', '/organisation/tutor-center']
@@ -15,6 +16,7 @@
 	let is_iframe = $page.url.searchParams.get('iframe')
 	addMessages('en', en)
 	addMessages('hk', hk)
+	addMessages('cn', cn)
 	init({
 		fallbackLocale: 'en',
 		initialLocale: lang
