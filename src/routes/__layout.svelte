@@ -12,6 +12,7 @@
 	const page_without_offset = ['/product/animated-library', '/product/ai-tool', '/programme/3050', '/programme/3050-register', '/school', '/organisation/tutor-center']
 	$: is_offset = !page_without_offset.includes($page.url.pathname)
 	let lang = $page.url.searchParams.get('lang')
+	let is_iframe = $page.url.searchParams.get('iframe')
 	addMessages('en', en)
 	addMessages('hk', hk)
 	init({
@@ -21,10 +22,14 @@
 </script>
 <Toast>
 	<Modal>
-		<Nav/>
-		<main class:sm:pt-20={is_offset} class:pt-12={is_offset}>
+		{#if !is_iframe}
+			<Nav/>
+		{/if}
+		<main class:sm:pt-20={!is_iframe && is_offset} class:pt-12={!is_iframe && is_offset}>
 			<slot></slot>
 		</main>
-		<Footer/>
+		{#if !is_iframe}
+			<Footer/>
+		{/if}
 	</Modal>
 </Toast>
