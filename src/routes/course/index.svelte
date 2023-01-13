@@ -10,7 +10,7 @@
 		{
 			title_en: 'GCSE',
 			title_hk: 'GCSE 英國適應課程',
-			title_cn: 'GCSE英国合适课程',
+			title_cn: 'GCSE英国适应课程',
 			href: 'gcse',
 			image: '/one-on-one/gcse.jpg'
 		},

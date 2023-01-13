@@ -52,14 +52,6 @@
 	<div class="bg-blue-100 p-2 my-4">
 		<AfterClassRevisionModule/>
 	</div>
-
-	<div class="p-4 bg-gray-200 rounded">
-		<ul class="mb-4">
-			<li>{$_('lesson_target')}： K2-K3</li>
-			<li>{$_('lesson_format')}</li>
-			<li>{$_('lesson_duration_30')}</li>
-		</ul>
-	</div>
 </div>
 
 <Head

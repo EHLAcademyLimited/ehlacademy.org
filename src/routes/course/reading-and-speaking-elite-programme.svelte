@@ -34,12 +34,6 @@
 			<p>UK curriculum is subject to enquiry</p>
 		{/if}
 	</div>
-	<div class="p-4 bg-gray-200 rounded">
-		<ul class="mb-4">
-			<li>{$_('lesson_format')}</li>
-			<li>{$_('lesson_duration_40')}</li>
-		</ul>
-	</div>
 </div>
 
 <Head
