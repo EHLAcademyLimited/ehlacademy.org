@@ -28,14 +28,6 @@
 			<p>The most valuable part of this class is not about what reading topics students will learn, but about taking the opportunity to interact one-on-one with British teachers on various reading topics. The goal is not just to broaden the reading horizons, but also try the best to train themselves up to harness native speaker language skills, so as to adapt to their study life in the UK.</p>
 		{/if}
 	</div>
-
-	<div class="p-4 bg-gray-200 rounded">
-		<ul class="mb-4">
-			<li>{$_('lesson_format')}</li>
-			<li>{$_('lesson_duration_40')}</li>
-		</ul>
-		<WhatsappEnquiry/>
-	</div>
 </div>
 
 <Head

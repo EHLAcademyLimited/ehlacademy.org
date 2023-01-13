@@ -10,7 +10,7 @@
 		{
 			title_en: 'GCSE',
 			title_hk: 'GCSE 英國適應課程',
-			title_cn: 'GCSE英国合适课程',
+			title_cn: 'GCSE英国适应课程',
 			href: 'gcse',
 			image: '/one-on-one/gcse.jpg'
 		},
@@ -24,7 +24,7 @@
 		{
 			title_en: 'Elite Native Writing (8-11yro)',
 			title_hk: '英文精英寫作 (8-11yro)',
-			title_cn: '中文精英写作 (8-11yro)',
+			title_cn: '英文精英写作 (8-11yro)',
 			href: 'elite-creative-writing-class',
 			image: '/one-on-one/creative-writing.jpeg'
 		},

@@ -36,7 +36,7 @@
 	<div class="relative">
 		<div style="padding-top: 56%"></div>
 		<iframe class="absolute w-full h-full inset-0" src="https://www.youtube.com/embed/7ztKjnaBNek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+	</div>
 </div>
 
 <div class="bg-[#FFE173] overflow-hidden text-center">
