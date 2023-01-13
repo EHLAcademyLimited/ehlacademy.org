@@ -59,7 +59,6 @@
 			<li>{$_('lesson_format')}</li>
 			<li>{$_('lesson_duration_30')}</li>
 		</ul>
-		<WhatsappEnquiry/>
 	</div>
 </div>
 

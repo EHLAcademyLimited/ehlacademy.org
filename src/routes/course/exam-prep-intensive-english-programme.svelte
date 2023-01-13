@@ -61,7 +61,6 @@
 	<div class="p-4 bg-gray-200 rounded">
 		<li>{$_('lesson_format')}</li>
 		<li>{$_('lesson_duration_30_40')}</li>
-		<WhatsappEnquiry/>
 	</div>
 </div>
 
