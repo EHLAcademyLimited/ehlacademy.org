@@ -1158,7 +1158,7 @@ export default {
 		desc_2: 'EHLA为学校、教育机构、老师、家长和学生提供了顶尖的英语教育内容和学与教方案。'
 	},
 	sharing: {
-		title: '与你分享'
+		title: '牛津教育家们的分享'
 	},
 	subscription: {
 		ai: {
