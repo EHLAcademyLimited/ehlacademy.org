@@ -24,7 +24,7 @@
 		{
 			title_en: 'Elite Native Writing (8-11yro)',
 			title_hk: '英文精英寫作 (8-11yro)',
-			title_cn: '中文精英写作 (8-11yro)',
+			title_cn: '英文精英写作 (8-11yro)',
 			href: 'elite-creative-writing-class',
 			image: '/one-on-one/creative-writing.jpeg'
 		},
