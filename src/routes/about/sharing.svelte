@@ -106,7 +106,7 @@
 				</div>
 				<h2 class="text-p2 mt-2">{v[`title_${$locale}`]}</h2>
 				{#if v[`author_${$locale}`]}
-					<h2 class="text-gray-500 text-xs">{v[`author_${$locale}`]}</h2>
+					<h2 class="text-gray-600 italic text-base">{v[`author_${$locale}`]}</h2>
 				{/if}
 			</div>
 			{/if}
