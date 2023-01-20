@@ -5,27 +5,30 @@
 			id: 'goFC8EFy6go',
 			title_hk: '新世紀決定電子教育成功的三個維度',
 			title_cn: '新世纪决定电子教育成功的三个维度',
-			author_hk: 'John Furlong教授，前牛津大學教育學院院長',
+			author_hk: '前牛津大學教育學院院長Pro. John Furlong EHLA 總教育顧問 ',
+			author_cn: '前牛津大学教育学院院长Pro. John Furlong EHLA 总教育顾问 ',
 			title_en: 'Three Dimensions That Contribute to the Success of e-Education',
-			author_en: 'Professor John Furlong, ex-head of Education Department, Oxford University',
+			author_en: 'Ex-head of Dept. of Education, University of Oxford Chief Education Advisor to EHLA ',
 			video_url: "https://ehla-media.oss-cn-hongkong.aliyuncs.com/John%20Furlong_%20Three%20Dimensions%20That%20Contribute%20to%20the%20Success%20of%20e-Education.mp4\n"
 		},
 		{
 			id: 'FxsoVMA6v78',
 			title_hk: '全球視角下的中小學電子教育的實踐、趨勢與挑戰',
 			title_cn: '全球视角下的中小学电子教育的实践、趋势与挑战',
-			author_hk: 'Niall Winters, 牛津大學教育學院理學碩士教育（學習與技術）課程聯席總監, 牛津大學教育學院學習及新技術學系副教授',
+			author_hk: '牛津大學學習與新技術研究學系聯席課程總監 Niall Winters ',
+			author_cn: '牛津大学学习与新技术研究学系联席课程总监 Dr. Niall Winters ',
 			title_en: 'The Current Practices, Trends and Challenges in K12 E-learning over the World',
-			author_en: 'Niall Winters, Co-Director of the MSc Education, Associate Professor of Learning and New Technologies, Department of Education, University of Oxford',
+			author_en: 'Dr. Niall Winters, Learning and New Technologies Research Group Dept. of Education, University of Oxford ',
 			video_url: "https://ehla-media.oss-cn-hongkong.aliyuncs.com/Niall%20Winters_%20The%20Current%20Practices%2C%20Trends%20and%20Challenges%20in%20K12%20E-learning%20over%20the%20World.mp4\n"
 		},
 		{
 			id: '7ztKjnaBNek',
 			title_hk: '如何確保EHLA英文教學資源的一致性、可靠性與權威性',
 			title_cn: '如何确保EHLA英语教学资源的一致性、可靠性与权力',
-			author_hk: 'Adrian Bullock',
+			author_hk: '牛津大學語言學家，EHLA 英文總編輯，Dr. Adrian Bullock',
+			author_cn: '牛津大学语言学家，EHLA 英文总编辑，Dr. Adrian Bullock ',
 			title_en: 'Managing the Quality of EHLA English Language Teaching and Learning Resources',
-			author_en: 'Adrian Bullock',
+			author_en: 'Chief Editor of EHLA, Linguist from University of Oxford',
 			video_url: "https://ehla-media.oss-cn-hongkong.aliyuncs.com/Managing%20the%20Quality%20of%20EHLA%20English%20Language%20Teaching%20and%20Learning%20Resources.mp4"
 		},
 		{
@@ -46,16 +49,16 @@
 			author_en: 'EHLA Official Channel',
 			video_url: "https://ehla-media.oss-cn-hongkong.aliyuncs.com/How%20Important%20is%20Reading%20for%20English%20Learning.mp4"
 		},
-		{
-			id: 'qnA3w0PFofI',
-			title_hk: 'EHLA智能教育，一個革命性的教育項目',
-			title_cn: 'EHLA智能教育，一个革新性的教育项目',
-			author_hk: 'EHLA官方頻道',
-			title_en: 'EHLA iEducation, A revolutionary educational project\n',
-			author_en: 'EHLA Official Channel',
-			video_url: "",
-			is_cn: false
-		},
+		// {
+		// 	id: 'qnA3w0PFofI',
+		// 	title_hk: 'EHLA智能教育，一個革命性的教育項目',
+		// 	title_cn: 'EHLA智能教育，一个革新性的教育项目',
+		// 	author_hk: 'EHLA官方頻道',
+		// 	title_en: 'EHLA iEducation, A revolutionary educational project\n',
+		// 	author_en: 'EHLA Official Channel',
+		// 	video_url: "",
+		// 	is_cn: false
+		// },
 		{
 			id: '0TSKToBdBS0',
 			title_hk: '為什麼亞洲學生需要學習英語文學呢？',
@@ -98,11 +101,13 @@
 				<div class="v-wrap">
 <!--					<iframe src="https://www.youtube.com/embed/{v.id}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
 					<video preload="metadata" controls playsinline class="absolute inset-0 w-full h-full">
-						<source src={v.video_url} type="video/mp4">
+						<source src="{v.video_url}#t=12" type="video/mp4">
 					</video>
 				</div>
 				<h2 class="text-p2 mt-2">{v[`title_${$locale}`]}</h2>
-<!--				<p class="text-sm text-gray-400">{v[`author_${$locale}`]}</p>-->
+				{#if v[`author_${$locale}`]}
+					<h2 class="text-gray-500 text-xs">{v[`author_${$locale}`]}</h2>
+				{/if}
 			</div>
 			{/if}
 		{/each}

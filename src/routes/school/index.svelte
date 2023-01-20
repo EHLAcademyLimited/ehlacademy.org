@@ -4,14 +4,23 @@
 	import Reader from './_school_reader.svelte'
 	import Icon from '$lib/ui/Icon.svelte'
 	import Youtube from '$lib/ui/YoutubePopup.svelte'
+	import VideoPopup from '$lib/ui/VideoPopup.svelte'
 	import {getContext} from 'svelte'
 	const {open} = getContext('simple-modal')
 	import {t, locale} from 'svelte-i18n'
 	const {openModal, closeModal} = getContext('simple-modal')
 	import SchoolLoginDialog from "../../lib/school/SchoolLoginDialog.svelte";
 
-	const showVideo = (id) => {
-		open(Youtube, {id})
+	const showVideo = (obj) => {
+		if ($locale === 'cn') {
+			open(VideoPopup, {
+				src: obj.src
+			})
+		} else {
+			open(Youtube, {
+				id: obj.id
+			})
+		}
 	}
 
 	const logins = [
@@ -34,11 +43,13 @@
 	const conference = [
 		{
 			year: '2018',
-			youtube_id: '9COPMtUq_Bo'
+			youtube_id: '9COPMtUq_Bo',
+			src: 'https://ehla-media.oss-cn-hongkong.aliyuncs.com/i%20Education%20Conference%20Hong%20Kong%202018.mp4'
 		},
 		{
 			year: '2019',
-			youtube_id: 'MODs6ghKO0A'
+			youtube_id: 'MODs6ghKO0A',
+			src: 'https://ehla.oss-cn-hangzhou.aliyuncs.com/strapi/i_Education_Conference_Hong_Kong_2019_ce579d7ad0.mp4?updated_at=2023-01-19T08:34:23.692Z'
 		}
 	]
 
@@ -92,7 +103,7 @@
 				<p class="text-p2 md:text-p3 mb-8 text-brown-500">{$t('school.conference_desc')}</p>
 				<div class="grid grid-cols-2 gap-2 sm:gap-4">
 					{#each conference as c}
-						<div on:click={() => {showVideo(c.youtube_id)}} class="group cursor-pointer py-4 px-2 sm:px-4 bg-gray-200 hover:bg-red-500 hover:text-white rounded inline-flex items-center">
+						<div on:click={() => {showVideo(c)}} class="group cursor-pointer py-4 px-2 sm:px-4 bg-gray-200 hover:bg-red-500 hover:text-white rounded inline-flex items-center">
 							<div class="font-bold flex-1">
 								<p class="group-hover:text-white text-red-500 leading-none">{c.year}</p>
 								<p class="text-p2">{$t('school.play_video')}</p>
