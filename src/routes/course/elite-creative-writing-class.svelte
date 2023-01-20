@@ -55,12 +55,6 @@
 		<h2>Advanced vocabulary in use</h2>
 		<p>To guide students to diversify the application of vocabulary for their writing, so that the overall quality of their work can be enhanced to a new higher level. </p>
 	{/if}
-
-	<ul class="mt-8 p-4 bg-gray-200 rounded">
-		<li>{$_('lesson_target_writing')}</li>
-		<li>{$_('lesson_format')}</li>
-		<li>{$_('lesson_duration_40')}</li>
-	</ul>
 </div>
 <style>
 	h1 {
