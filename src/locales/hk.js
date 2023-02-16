@@ -1250,5 +1250,5 @@ export default {
 	"elite-creative-writing-class": "精英躍升英文寫作課程",
 	"reading-and-speaking-elite-programme": "精英閱讀與主題對談",
 	"reading-writing-and-speaking-bridging-uk": "閱讀、寫作與主題對話",
-	"one_on_one_title": "定制英語課程服務",
+	"one_on_one_title": "訂製精英躍升課程",
 }
