@@ -18,7 +18,10 @@
 						<img class="absolute inset-0 rounded-lg" src="{item.attributes.image.data.attributes.url}"
 						     alt={item.attributes.title_en}>
 					</div>
-					<h2 class="mt-2 text-gray-800 text-3xl">{item.attributes[`title_${$locale}`]}</h2>
+					<h2 class="mt-2 text-gray-800 text-2xl">{item.attributes[`title_${$locale}`]}</h2>
+					{#if item.attributes[`subtitle_${$locale}`]}
+						<h2 class="mt-2 text-gray-700 text-lg leading-tight">{item.attributes[`subtitle_${$locale}`]}</h2>
+					{/if}
 				</a>
 			</div>
 		{/each}

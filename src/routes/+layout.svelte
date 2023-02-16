@@ -4,6 +4,8 @@
 	import Toast from "$lib/app-shelf/Toast.svelte";
 	import Footer from "../lib/app-shelf/Footer.svelte";
 	import Nav from "$lib/app-shelf/Nav.svelte";
+	import LoadingBar from '$lib/ui/app-shelf/IndeterminateLoadingBar.svelte'
+	import {navigating} from "$app/stores";
 
 	import en from '../locales/en.js'
 	import hk from '../locales/hk.js'
@@ -28,6 +30,11 @@
 			<Nav/>
 		{/if}
 		<main class:sm:pt-20={!is_iframe && is_offset} class:pt-12={!is_iframe && is_offset}>
+			{#if $navigating}
+				<div class="fixed inset-x-0 top-0 z-50">
+					<LoadingBar/>
+				</div>
+			{/if}
 			<slot></slot>
 		</main>
 		{#if !is_iframe}

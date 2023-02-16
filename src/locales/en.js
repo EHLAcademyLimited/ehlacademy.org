@@ -1252,4 +1252,5 @@ export default {
 	"elite-creative-writing-class": "Elite Creative Writing Class",
 	"reading-and-speaking-elite-programme": "Reading & Speaking Elite Programme",
 	"reading-writing-and-speaking-bridging-uk": "Reading & Speaking Elite Programme",
+	"one_on_one_title": "Customized English Lesson Services",
 }

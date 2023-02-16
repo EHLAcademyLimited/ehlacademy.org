@@ -1249,5 +1249,6 @@ export default {
 	"story-telling-and-speaking": "英文故事阅读与会话课堂",
 	"elite-creative-writing-class": "精英跃升英文写作课程",
 	"reading-and-speaking-elite-programme": "精英阅读与主题对谈",
-	"reading-writing-and-speaking-bridging-uk": "阅读、写作与主题对话"
+	"reading-writing-and-speaking-bridging-uk": "阅读、写作与主题对话",
+	"one_on_one_title": "定制英语课程服务",
 }
