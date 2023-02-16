@@ -6,9 +6,9 @@
 	import Icon from "$lib/ui/Icon.svelte";
 </script>
 
-<div class="container py-4">
+<div class="container py-4 html-content">
 	<div class="text-blue-700 flex items-center mb-8">
-		<a class="mx-2 hover:underline" href="/{$locale}/one-on-one">{$_('one_on_one_title')}</a>
+		<a class="mx-2 hover:underline" href="/course">{$_('one_on_one_title')}</a>
 		<Icon name="right2" className="w-3 transform"/>
 		<p class="mx-2 text-gray-500">{course[`title_${$locale}`]}</p>
 	</div>
