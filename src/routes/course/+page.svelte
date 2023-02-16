@@ -28,4 +28,4 @@
 	</div>
 </div>
 
-<Head title={$_('one_on_one')}/>
+<Head title={$_('one_on_one_title')}/>
