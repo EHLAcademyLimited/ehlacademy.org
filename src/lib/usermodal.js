@@ -1,10 +1,10 @@
 import {variables} from "$lib/env";
-console.log(variables)
 const base = variables.api_base + '/v1'
+import {json} from "@sveltejs/kit";
 
 export async function usermodel (event, data, maxage = 300, _method) {
 	try {
-		const region = (event.url.hostname === "cn.ehla-class.com") || variables.force_cn === "1" ? 'cn' : 'hk'
+		const region = (event.url.hostname === variables.cn_hostname) || variables.force_cn === "1" ? 'cn' : 'hk'
 		const method = _method || event.request.method
 		const request = event.request
 		const resource = request.url.split('/api')[1]
@@ -43,15 +43,16 @@ export async function usermodel (event, data, maxage = 300, _method) {
 		} else {
 			headers['cache-control'] = 'public, max-age=0, must-revalidate'
 		}
-		return {
+		return json(await res.json(), {
 			headers,
 			status: res.status,
-			body: await res.json()
-		}
+		})
 	} catch (e) {
-		return {
-			status: 500,
-			body: e.toString()
-		}
+		console.log('catch', e)
+		return json({
+			debug: e.toString()
+		},{
+			status: 500
+		})
 	}
 }

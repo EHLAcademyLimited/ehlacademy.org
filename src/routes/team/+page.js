@@ -8,6 +8,7 @@ export const load = async ({fetch}) => {
 				&& name.indexOf('Writing') < 0
 				&& name.indexOf('John') < 0
 	})
+	console.log(data)
 	return {
 		tutor_list
 	}
