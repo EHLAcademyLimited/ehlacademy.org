@@ -2,17 +2,10 @@
   "name": "ios-webview",
   "version": "0.0.1",
   "scripts": {
-    "dev:only": "svelte-kit dev --host --port 3006",
-    "build:only": "svelte-kit build",
-    "tailwind:watch": "cross-env TAILWIND_MODE=watch cross-env NODE_ENV=development postcss src/styles/tailwind.css -o src/styles/tailwind-output.css -w",
-    "tailwind:build": "cross-env TAILWIND_MODE=build cross-env NODE_ENV=production postcss src/styles/tailwind.css -o src/styles/tailwind-output.css",
-    "dev": "concurrently \"yarn run dev:only\" \"yarn run tailwind:watch\"",
-    "build": "yarn run tailwind:build && yarn run build:only",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview",
-    "prepare": "svelte-kit sync",
-    "check": "svelte-check --tsconfig ./jsconfig.json",
-    "check:watch": "svelte-check --tsconfig ./jsconfig.json --watch"
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node build/index.js"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",

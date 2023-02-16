@@ -1,7 +1,7 @@
 // import {sentry} from "$lib/sentry";
 import {is_loading, still_loading_notification} from "$lib/store/is_loading";
 import {notifications} from "$lib/store/notification";
-import {browser} from "$app/env";
+import {browser} from "$app/environment";
 import {goto} from "$app/navigation";
 
 let is_caches_supported

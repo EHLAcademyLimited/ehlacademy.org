@@ -1,5 +1,5 @@
 <script>
-	import Sidebar from './_sidebar.svelte'
+	import Sidebar from '../_sidebar.svelte'
 </script>
 
 <Sidebar segment="oxford-research">

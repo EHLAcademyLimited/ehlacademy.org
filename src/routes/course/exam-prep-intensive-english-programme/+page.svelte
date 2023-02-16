@@ -1,7 +1,3 @@
-<script context="module">
-	export const prerender = false;
-</script>
-
 <script>
 	import {_, locale} from 'svelte-i18n'
 	import {page} from '$app/stores'

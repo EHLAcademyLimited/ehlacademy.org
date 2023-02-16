@@ -1,22 +1,24 @@
 <script context="module">
-	import {http} from "$lib/http";
+	throw new Error("@migration task: Check code was safely removed (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292722)");
 
-	export const load = async ({fetch, params}) => {
-		const res = await http.get(fetch, '/tutorApi/zoom_tutor_by_id', {
-			tutor_id: params.tutor_id
-		})
+	// import {http} from "$lib/http";
 
-		return {
-			props: {
-				tutor: res.data,
-				videos: res.data.videos
-			}
-		}
-	}
+	// export const load = async ({fetch, params}) => {
+	// 	const res = await http.get(fetch, '/tutorApi/zoom_tutor_by_id', {
+	// 		tutor_id: params.tutor_id
+	// 	})
+
+	// 	return {
+	// 		props: {
+	// 			tutor: res.data,
+	// 			videos: res.data.videos
+	// 		}
+	// 	}
+	// }
 </script>
 
 <script>
-	import Head from "../../lib/Head.svelte";
+	import Head from "../../../lib/Head.svelte";
 	export let tutor
 	export let videos = []
 	let classroom = []

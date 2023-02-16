@@ -1,7 +1,7 @@
 <script>
 	import {_, locale} from "svelte-i18n";
 	import Icon from "$lib/ui/Icon.svelte";
-	import Head from "../../lib/Head.svelte";
+	import Head from "../../../lib/Head.svelte";
 	$: title = $locale === 'en' ?
 			'English Literature and Elite Writing (6-7 yro)' :
 			'英國文學與精英寫作(6-7歲)'

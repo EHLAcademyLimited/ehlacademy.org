@@ -1,8 +1,10 @@
 <script context="module">
-	export const prerender = false;
-	import {locale, _} from 'svelte-i18n'
-	import Head from '$lib/Head.svelte'
-	import Footer from '$lib/app-shelf/Footer.svelte'
+	throw new Error("@migration task: Check code was safely removed (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292722)");
+
+	// export const prerender = false;
+	// import {locale, _} from 'svelte-i18n'
+	// import Head from '$lib/Head.svelte'
+	// import Footer from '$lib/app-shelf/Footer.svelte'
 </script>
 
 <script>
