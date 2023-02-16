@@ -2,7 +2,7 @@
 	import { flip } from "svelte/animate";
 	import { fly } from "svelte/transition";
 	import { notifications } from '$lib/store/notification';
-	import {browser} from "$app/env";
+	import {browser} from "$app/environment";
 
 	export let themes = {
 		alert: "bg-red-500",

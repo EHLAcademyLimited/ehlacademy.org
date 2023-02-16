@@ -1,6 +1,6 @@
 <script>
 	import {t} from 'svelte-i18n'
-	import Sidebar from './_sidebar.svelte'
+	import Sidebar from '../_sidebar.svelte'
 </script>
 
 <Sidebar>

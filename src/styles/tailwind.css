@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .container {
-	@apply mx-auto max-w-screen-lg px-4;
+	@apply mx-auto max-w-screen-lg sm:px-4 px-4;
 }
 .button {
 	@apply bg-blue-500 text-white px-3 py-1.5 rounded hover:bg-blue-700 text-sm;
@@ -23,6 +23,43 @@
 .item {
 	@apply cursor-pointer px-2 py-2 hover:bg-blue-50 hover:text-blue-500 flex items-center w-full text-sm rounded transition-colors;
 }
+
+.html-content:not(.no-br) p {
+	@apply my-4;
+}
+.html-content {
+	@apply leading-loose text-gray-700;
+}
+.html-content li {
+	@apply list-disc list-inside;
+}
+.html-content h1 {
+	@apply text-3xl sm:text-4xl text-red-700 mt-8 mb-2;
+}
+.html-content h2 {
+	@apply text-xl sm:text-2xl text-red-700 mt-8 mb-2;
+}
+.html-content h2 mark {
+	@apply w-8 h-8 bg-red-500 text-white rounded-full inline-flex justify-center items-center mr-2;
+}
+.html-content a {
+	@apply text-blue-500 hover:text-blue-700;
+}
+.html-content hr {
+	@apply h-[2px] my-8 bg-gray-500;
+}
+.html-content img {
+	@apply mx-auto w-96 max-w-full my-8;
+}
+.html-content blockquote {
+	@apply bg-amber-50 p-4 my-8 flex items-center text-amber-800 border border-amber-400 shadow leading-tight rounded;
+}
+.html-content blockquote:before {
+	content: "";
+	background-image: url("/blockquote-icon.png");
+	@apply w-8 h-8 bg-center bg-no-repeat bg-contain inline-block mr-2;
+}
+
 
 /* for Dropdown.svelte */
 #tooltip {
