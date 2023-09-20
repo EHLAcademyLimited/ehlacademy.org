@@ -29,6 +29,7 @@
 		</div>
 	</div>
 </div>
+
 <div class="container py-8 md:py-12 text-slate-700">
 	{#if tutor_list}
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
