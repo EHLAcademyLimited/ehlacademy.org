@@ -12,15 +12,10 @@
 	import SchoolLoginDialog from "../../lib/school/SchoolLoginDialog.svelte";
 
 	const showVideo = (obj) => {
-		if ($locale === 'cn') {
-			open(VideoPopup, {
-				src: obj.src
-			})
-		} else {
-			open(Youtube, {
-				id: obj.id
-			})
-		}
+		console.log(obj, $locale)
+		open(Youtube, {
+			id: obj.youtube_id
+		})
 	}
 
 	const logins = [
@@ -44,12 +39,10 @@
 		{
 			year: '2018',
 			youtube_id: '9COPMtUq_Bo',
-			src: 'https://ehla-media.oss-cn-hongkong.aliyuncs.com/i%20Education%20Conference%20Hong%20Kong%202018.mp4'
 		},
 		{
 			year: '2019',
 			youtube_id: 'MODs6ghKO0A',
-			src: 'https://ehla.oss-cn-hangzhou.aliyuncs.com/strapi/i_Education_Conference_Hong_Kong_2019_ce579d7ad0.mp4?updated_at=2023-01-19T08:34:23.692Z'
 		}
 	]
 
