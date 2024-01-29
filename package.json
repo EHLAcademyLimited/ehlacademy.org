@@ -8,11 +8,9 @@
     "start": "node build/index.js"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "next",
-    "@sveltejs/kit": "1.7.0",
+    "@sveltejs/adapter-auto": "^2.0.0",
+    "@sveltejs/kit": "^1.25.2",
     "autoprefixer": "10.4.2",
-    "concurrently": "7.0.0",
-    "cross-env": "7.0.3",
     "postcss-cli": "9.1.0",
     "svelte": "3.44.0",
     "svelte-check": "2.2.6",
