@@ -161,19 +161,19 @@
 
 <style>
 	.title {
-			@apply text-t2 md:text-h1 mb-2 md:mb-4 text-brown-400a
+			@apply text-t2 md:text-h1 mb-2 text-brown-400a;
 	}
 
 	.subtitle {
-			@apply text-t1 mb-4 text-brown-500
+			@apply text-t1 mb-4 text-brown-500;
 	}
 
 	.body {
-			@apply text-p2 text-brown-700
+			@apply text-p2 text-brown-700;
 	}
 
 	._grid {
-			@apply grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16
+			@apply grid grid-cols-1 md:grid-cols-2 gap-8;
 	}
 
 	.video-gradient {
