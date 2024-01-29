@@ -1,5 +1,5 @@
 {
-  "name": "ios-webview",
+  "name": "ehlacademy.org",
   "version": "0.0.1",
   "scripts": {
     "dev": "vite dev",
@@ -8,16 +8,14 @@
     "start": "node build/index.js"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^2.0.0",
-    "@sveltejs/kit": "^1.25.2",
-    "autoprefixer": "10.4.2",
-    "postcss-cli": "9.1.0",
-    "svelte": "3.44.0",
-    "svelte-check": "2.2.6",
-    "svelte-preprocess": "4.10.7",
-    "tailwindcss": "3.0.23",
-    "typescript": "~4.6.2",
-    "vite": "4.1.1"
+    "@sveltejs/adapter-cloudflare": "^2.3.4",
+    "@sveltejs/kit": "^1.5.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "svelte": "^3.54.0",
+    "tailwindcss": "^3.3.2",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.0"
   },
   "type": "module",
   "dependencies": {

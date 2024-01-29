@@ -3,7 +3,7 @@
 	import Modal from '$lib/app-shelf/Modal.svelte';
 	import Toast from "$lib/app-shelf/Toast.svelte";
 	import Footer from "../lib/app-shelf/Footer.svelte";
-	import Nav from "$lib/app-shelf/Nav.svelte";
+	import Nav from "../lib/app-shelf/Nav.svelte";
 	import LoadingBar from '$lib/ui/app-shelf/IndeterminateLoadingBar.svelte'
 	import {navigating} from "$app/stores";
 

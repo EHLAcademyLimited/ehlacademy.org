@@ -10,7 +10,6 @@
 	import MobileMenu from '$lib/app-shelf/MobileMenu.svelte'
 	import menu_items from '$lib/store/menu'
 	import {t, locale} from 'svelte-i18n'
-	import {languageOptions} from '$lib/store/menu'
 	export let segment
 
 	let floated = false
@@ -30,19 +29,13 @@
 			document.body.onscroll = () => {}
 		}
 	})
-
-	const changeLang = (lang) => {
-		const url = $page.url.origin + $page.url.pathname + `?lang=${lang}`
-		goto(url, {replaceState: true})
-		locale.set(lang)
-	}
 </script>
 
 <nav class="px-2 sm:px-4 inset-x-0 top-0 z-50 transition-all fixed text-gray-500" class:floated>
 	<div class="w-full flex items-center mx-auto h-12 sm:h-20 max-w-screen-xl flex-1 lg:flex-initial">
 		<a href="/" class="order-2 lg:order-1 flex-1 lg:flex-initial justify-center w-auto lg:w-60 inline-flex items-center text-red-500 transition-all" class:gray-logo={segment === 'animated-library' && !floated}>
 			<img src="/logo.png" alt="logo" class="w-8 h-8 sm:w-12 sm:h-12">
-<!--			<svg class="h-6 ml-2" viewBox="0 0 614 153" fill="#0097e6" xmlns="http://www.w3.org/2000/svg"><path d="M0.53125 3.28125H108.438V46.4062H58.8438V58.6875H108.25V95.4375H58.8438V109.594H111.719V153H0.53125V3.28125ZM223.469 3.28125H281.875V153H223.469V97.6875L192.344 100.406V153H134.031V3.28125H192.344V57.375L223.469 54.8438V3.28125ZM305.031 3.28125H363.344V107.906H413.688V153H305.031V3.28125ZM419.781 153L494.219 10.875C496.781 5.8125 501.5 2.4375 508.375 0.75C510.375 0.25 512.844 0 515.781 0C518.719 0 521.906 0.84375 525.344 2.53125C528.844 4.15625 531.594 6.75 533.594 10.3125L613.469 153H537.438L531.531 138.188H491.031L485.969 153H419.781ZM495.625 108.469H525.906L511.562 67.9688L495.625 108.469Z"/></svg>-->
+			<!--			<svg class="h-6 ml-2" viewBox="0 0 614 153" fill="#0097e6" xmlns="http://www.w3.org/2000/svg"><path d="M0.53125 3.28125H108.438V46.4062H58.8438V58.6875H108.25V95.4375H58.8438V109.594H111.719V153H0.53125V3.28125ZM223.469 3.28125H281.875V153H223.469V97.6875L192.344 100.406V153H134.031V3.28125H192.344V57.375L223.469 54.8438V3.28125ZM305.031 3.28125H363.344V107.906H413.688V153H305.031V3.28125ZM419.781 153L494.219 10.875C496.781 5.8125 501.5 2.4375 508.375 0.75C510.375 0.25 512.844 0 515.781 0C518.719 0 521.906 0.84375 525.344 2.53125C528.844 4.15625 531.594 6.75 533.594 10.3125L613.469 153H537.438L531.531 138.188H491.031L485.969 153H419.781ZM495.625 108.469H525.906L511.562 67.9688L495.625 108.469Z"/></svg>-->
 		</a>
 
 		<div class="lg:flex-1 order-1 lg:order-2 w-16 lg:w-auto">
@@ -93,19 +86,19 @@
 </nav>
 
 <style>
-    .menu-item-right {
-        @apply rounded-full hover:bg-gray-100 h-12 px-4 inline-flex items-center;
-    }
+	.menu-item-right {
+		@apply rounded-full h-12 px-4 inline-flex items-center;
+	}
 
-    .dropdown-item {
-		    @apply h-10 flex items-center px-4 hover:bg-gray-200;
-    }
+	.dropdown-item {
+		@apply h-10 flex items-center px-4;
+	}
 
-    nav.floated {
-		    @apply bg-white shadow;
-    }
+	nav.floated {
+		@apply bg-white shadow;
+	}
 
-    .gray-logo {
-		    @apply text-gray-500 !important;
-    }
+	.gray-logo {
+		@apply text-gray-500;
+	}
 </style>
