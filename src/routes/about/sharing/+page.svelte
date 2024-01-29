@@ -123,10 +123,10 @@
 			padding-top: 56.25%;
 			max-width: 500px;
 			overflow: hidden;
-			@apply relative
+			@apply relative;
 	}
 
 	iframe {
-			@apply absolute inset-0 w-full h-full
+			@apply absolute inset-0 w-full h-full;
 	}
 </style>
