@@ -161,7 +161,7 @@
 
 <style>
 	.title {
-			@apply text-t2 md:text-h1 mb-2 text-brown-400a;
+			@apply text-t2 mb-2 text-brown-400a;
 	}
 
 	.subtitle {
@@ -173,7 +173,7 @@
 	}
 
 	._grid {
-			@apply grid grid-cols-1 md:grid-cols-2 gap-8;
+			@apply grid grid-cols-1 gap-8;
 	}
 
 	.video-gradient {
