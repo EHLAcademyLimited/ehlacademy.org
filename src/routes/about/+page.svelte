@@ -65,21 +65,21 @@
 <style>
 	p {
 			line-height: 2em;
-			@apply text-p2 sm:text-p3 text-gray-500
+			@apply text-p2 text-gray-500;
 	}
   .contact-section p {
 		  line-height: 1.7em;
   }
   h1 {
-		  @apply text-t2 sm:text-h1
+		  @apply text-t2;
   }
   .line {
-		  @apply h-12 sm:h-48 w-1 bg-gray-300 my-8
+		  @apply h-12 w-1 bg-gray-300 my-8;
   }
   .header-line {
-		  @apply w-8 h-1 bg-gray-700 mt-2 mb-8
+		  @apply w-8 h-1 bg-gray-700 mt-2 mb-8;
   }
   .link {
-		@apply text-p2 sm:text-p3 text-regal-blue-500 mt-4 inline-block
+		@apply text-p2 text-regal-blue-500 mt-4 inline-block;
   }
 </style>
