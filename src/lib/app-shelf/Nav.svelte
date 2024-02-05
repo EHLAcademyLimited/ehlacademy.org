@@ -10,11 +10,17 @@
 	import MobileMenu from '$lib/app-shelf/MobileMenu.svelte'
 	import menu_items from '$lib/store/menu'
 	import {t, locale} from 'svelte-i18n'
+	import {languageOptions} from "../store/menu.js";
 	export let segment
 
 	let floated = false
 	let mobile_menu_items = [$menu_items.home, $menu_items.main[0],$menu_items.main[1],$menu_items.main[2]]
 	$: is_school = $page.url.pathname === '/school'
+
+	const changeLang = (lang) => {
+		console.log(lang)
+		locale.set(lang)
+	}
 
 	onMount(() => {
 		document.body.onscroll = () => {

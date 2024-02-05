@@ -169,7 +169,7 @@
 	}
 
 	.body {
-			@apply text-p2 text-brown-700;
+			@apply text-p2 teyrxt-brown-700;
 	}
 
 	._grid {
