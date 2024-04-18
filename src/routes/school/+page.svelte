@@ -148,12 +148,7 @@
 				</a>
 			</div>
 			<div>
-				<div class="bg-gray-500 pt-[56%] mt-8 relative">
-					<video class="absolute inset-0"
-					       controls
-					       src="https://ehla-media-bucket.s3.ap-southeast-1.amazonaws.com/usermodel_School/Pre-DSE+sample.mp4.mp4" alt="">
-				</div>
-				<p class="italic mt-2 leading-tight text-sm">5** Pre-DSE Oral Intensive Training - True Class Recording (extract)</p>
+
 			</div>
 		</div>
 	</div>
