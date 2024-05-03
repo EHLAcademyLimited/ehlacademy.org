@@ -97,8 +97,8 @@
 					<div class="relative h-full">
 						<video controls src={v.video_url} poster={v.poster}></video>
 						<div class="p-2 sm:py-4 bg-white/[0.99] absolute bottom-0 inset-x-0 text-center text-sm sm:text-base">
-							<p class="mb-1">{v.title_hk}</p>
-							<p>- {v.author_hk}</p>
+							<p class="mb-1">{v[`title_${$locale}`]}</p>
+							<p>{v[`author_${$locale}`]}</p>
 						</div>
 					</div>
 				</li>
