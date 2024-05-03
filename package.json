@@ -19,6 +19,8 @@
   },
   "type": "module",
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-video": "^0.8.0",
     "cookie": "0.5.0",
     "dayjs": "1.11.2",
     "debounce": "1.2.1",

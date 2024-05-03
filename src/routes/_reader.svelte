@@ -14,7 +14,7 @@
 					<h1 class="text-t2 md:text-h1 text-red-500 font-bold">{$t('3050.team.title2')}</h1>
 				</div>
 
-				<div class="grid grid-cols-2 gap-4">
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 					{#each tutors as tutor}
 						<a href="/team/{tutor.tutor_id}" class="md:text-center flex md:block">
 							<div class="w-[120px] h-[120px] md:w-[200px] md:h-[200px] overflow-hidden rounded-full mx-auto border-8 border-slate-200 shadow-lg flex-shrink-0">
@@ -31,9 +31,6 @@
 				<div class="text-center mt-12">
 					<a class="inline-block rounded-full bg-yellow-700 hover:bg-yellow-500 hover:text-black text-white px-6 py-3 md:px-8 md:py-4 text md:text-p2 text-white font-bold" href="product/animated-library">{$t('learn_more')}</a>
 				</div>
-			</div>
-			<div class="h-64 sm:h-0">
-
 			</div>
 		</div>
 	</div>

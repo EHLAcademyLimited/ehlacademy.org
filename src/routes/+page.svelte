@@ -24,18 +24,22 @@
 
 <FurlongBanner/>
 
-<div class="bg-gray-100 pt-12 md:pt-16 bg-right-bottom bg-no-repeat bg-size-hill relative overflow-hidden">
+<div class="bg-gray-100 pt-8 md:pt-16 bg-right-bottom bg-no-repeat bg-size-hill relative overflow-hidden">
 
-	<img src="/ai-ai-ai.png" alt="deco" class="hidden md:block pointer-events-none absolute left-0 bottom-0 lg:w-full transform md:scale-125 xl:scale-100" style="max-width: 1600px">
-	<div class="relative z-10 max-w-screen-lg mx-auto px-6 md:text-center">
-		<h1 class="font-bold text-t2 md:text-h1 mb-4 text-red-500">{$t('sharing.title')}</h1>
-		<h2 class="text-p3 lg:text-t1 text-gray-400 mb-4 md:mb-6">{$t('ai.desc')}</h2>
-		<a class="inline-block rounded-full bg-red-500 text-white hover:bg-red-700 px-6 py-3 md:px-8 md:py-4 text md:text-p2 text-white font-bold" href="product/ai-tool">{$t('learn_more')}</a>
+	<img src="/ai-ai-ai.png" alt="deco" class="hidden md:block pointer-events-none absolute left-0 bottom-0 lg:w-full transform md:scale-125 xl:scale-100"
+	     style="max-width: 1600px">
+	<div class="relative z-10 max-w-screen-lg mx-auto md:text-center">
+		<h1 class="px-6 font-bold text-t2 md:text-h1 mb-4 sm:mb-8 text-red-500">{$t('sharing.title')}</h1>
 
-		<SharingHero/>
+		<div class="px-6">
+			<a class="inline-block rounded-full bg-red-500 text-white hover:bg-red-700 px-6 py-3 md:px-8 md:py-4 text md:text-p2 text-white font-bold"
+			   href="/about/sharing">
+				{$t('learn_more')}
+			</a>
+		</div>
 
-		<div class="-mx-4">
-			<img src="/ai-screen-mobile-2.png" alt="app-screen" class="block md:hidden">
+		<div class="px-2 sm:px-6 mt-4 sm:mt-8 sm:mb-16 mb-8">
+			<SharingHero/>
 		</div>
 	</div>
 </div>
@@ -66,10 +70,9 @@
 			<div class="self-center">
 				<h2 class="text-t1 md:text-t2 font-bold mb-4 text-brown-700">{$t('school.conference')}</h2>
 				<p class="text-p2 md:text-p3 mb-8 text-brown-500">{$t('school.conference_desc')}</p>
-
 			</div>
 		</div>
-		<div class="grid grid-cols-2 gap-2 sm:gap-4 mt-5">
+		<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 sm:mt-4">
 			{#each conference as c}
 				<div class="group cursor-pointer py-4 px-2 sm:px-4 bg-gray-200 hover:bg-red-500 hover:text-white rounded inline-flex items-center">
 					<div class="font-bold flex-1">
