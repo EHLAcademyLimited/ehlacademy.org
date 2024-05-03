@@ -68,7 +68,6 @@
 	const initSlider = async () => {
 		try { Splide } catch (e) {
 			await requireJS('/js/splide.min.js')
-			await requireJS('https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/js/splide-extension-video.min.js')
 		}
 		const splide = new Splide( '.splide', {
 			heightRatio: 0.64,
