@@ -4,6 +4,7 @@
 	import FurlongBanner from "../../lib/static-section/FurlongBanner.svelte";
 	export let data
 	let {tutor_list} = data
+	console.log(JSON.stringify(tutor_list.slice(0,4)))
 </script>
 <FurlongBanner/>
 <div class="container my-8">

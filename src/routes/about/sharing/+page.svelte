@@ -99,7 +99,6 @@
 			{#if !(v.is_cn === false && $locale === 'cn')}
 			<div>
 				<div class="v-wrap">
-<!--					<iframe src="https://www.youtube.com/embed/{v.id}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
 					<video preload="metadata" controls playsinline class="absolute inset-0 w-full h-full">
 						<source src="{v.video_url}#t=12" type="video/mp4">
 					</video>
