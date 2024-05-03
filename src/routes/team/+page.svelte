@@ -6,7 +6,17 @@
 	let {tutor_list} = data
 	console.log(JSON.stringify(tutor_list.slice(0,4)))
 </script>
-<FurlongBanner/>
+
+<div class="bg-[#FFE173] overflow-hidden text-center">
+	<div class="max-w-screen-lg mx-auto py-8 md:py-12 relative">
+		<div class="relative z-10">
+			<img src="/quality-crown.png" alt="cp ratio" class="mx-auto max-w-[90px] mb-4">
+			<p class="text-t1 sm:text-t2 text-amber-700 md:mb-2">{$_('3050.team.title1')}</p>
+			<h2 class="text-p1 sm:text-p3 lg:text-5xl text-amber-700">{$_('3050.team.title2')}</h2>
+		</div>
+	</div>
+</div>
+
 <div class="container my-8">
 	<p class="text-2xl mb-4">
 		{#if $locale === 'en'}
@@ -21,19 +31,9 @@
 	</div>
 </div>
 
-<div class="bg-[#FFE173] overflow-hidden text-center">
-	<div class="max-w-screen-lg mx-auto py-8 md:py-12 relative">
-		<div class="relative z-10">
-			<img src="/quality-crown.png" alt="cp ratio" class="mx-auto max-w-[90px] mb-4">
-			<p class="text-t1 sm:text-t2 text-amber-700 md:mb-2">{$_('3050.team.title1')}</p>
-			<h2 class="text-p1 sm:text-p3 lg:text-5xl text-amber-700">{$_('3050.team.title2')}</h2>
-		</div>
-	</div>
-</div>
-
 <div class="container py-8 md:py-12 text-slate-700">
 	{#if tutor_list}
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-8 ">
 		{#each tutor_list as tutor}
 			<a href="/team/{tutor.tutor_id}" class="md:text-center flex md:block">
 				<div class="w-[120px] h-[120px] md:w-[200px] md:h-[200px] overflow-hidden rounded-full mx-auto border-8 border-slate-200 shadow-lg flex-shrink-0">

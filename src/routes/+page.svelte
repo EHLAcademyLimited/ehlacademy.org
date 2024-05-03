@@ -77,7 +77,7 @@
 				<div class="group cursor-pointer py-4 px-2 sm:px-4 bg-gray-200 hover:bg-red-500 hover:text-white rounded inline-flex items-center">
 					<div class="font-bold flex-1">
 						<p class="group-hover:text-white text-red-500 leading-none mb-2">{c.year}</p>
-						<iframe class=" w-full h-60" src="https://www.youtube.com/embed/{c.id}"
+						<iframe class=" w-full h-60" src="https://www.youtube.com/embed/{c.youtube_id}"
 						        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						        allowfullscreen></iframe>
 					</div>
@@ -90,17 +90,17 @@
 <ReaderSection/>
 
 <div class="bg-cover bg-center pl-8 md:pl-24 py-40 text-white relative" style="background-image: url('/uk-school.webp')">
-	<div class="absolute z-10 inset-0 backdrop"></div>
 	<h1 class="max-w-screen-sm z-20 relative text-t1 sm:text-h1 drop-shadow-xl mt-12 mb-8">{$_('one_on_one_title')}</h1>
-	<a class="inline-block rounded-full bg-yellow-700 hover:bg-yellow-500 hover:text-black text-white px-6 py-3 md:px-8 md:py-4 text md:text-p2 text-white font-bold" href="product/animated-library">
+	<a class="inline-block rounded-full bg-yellow-700 hover:bg-yellow-500 hover:text-black text-white px-6 py-3 md:px-8 md:py-4 text md:text-p2 text-white font-bold"
+	   href="/course">
 		{$t('learn_more')}
 	</a>
 </div>
 
 <div class="bg-cover bg-center pl-8 md:pl-24 py-40 relative" style="background-image: url('/milestone.jpeg')">
-	<div class="absolute z-10 inset-0 backdrop"></div>
 	<h1 class="text-white max-w-screen-sm z-20 relative text-t1 sm:text-h1 drop-shadow-xl mb-8">{$_('nav.milestone')}</h1>
-	<a class="inline-block rounded-full bg-white hover:text-black px-6 py-3 md:px-8 md:py-4 text md:text-p2 font-bold" href="product/animated-library">
+	<a class="inline-block rounded-full bg-white hover:text-black px-6 py-3 md:px-8 md:py-4 text md:text-p2 font-bold"
+	   href="/about/milestone/?lang=en">
 		{$t('learn_more')}
 	</a>
 </div>

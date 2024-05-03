@@ -29,7 +29,8 @@
 				</div>
 
 				<div class="text-center mt-12">
-					<a class="inline-block rounded-full bg-yellow-700 hover:bg-yellow-500 hover:text-black text-white px-6 py-3 md:px-8 md:py-4 text md:text-p2 text-white font-bold" href="product/animated-library">{$t('learn_more')}</a>
+					<a class="inline-block rounded-full bg-yellow-700 hover:bg-yellow-500 hover:text-black text-white px-6 py-3 md:px-8 md:py-4 text md:text-p2 text-white font-bold"
+					   href="/team">{$t('learn_more')}</a>
 				</div>
 			</div>
 		</div>

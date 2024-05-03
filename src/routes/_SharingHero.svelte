@@ -53,16 +53,15 @@
 			id: 'QTJdWATpCLU',
 			title_hk: '總編輯的訪問',
 			title_cn: '总编辑的访问',
-			author_hk: 'EHLA官方頻道',
+			author_hk: '牛津大學語言學家，EHLA 英文總編輯，Dr. Adrian Bullock',
 			title_en: 'Interview with chief editor',
-			author_en: 'EHLA Official Channel',
+			author_en: 'Chief Editor of EHLA, Linguist from University of Oxford',
 			video_url: "https://ehla-media.oss-cn-hongkong.aliyuncs.com/Interview.mp4",
 			poster: "/video_preview_4.png"
 		}
 	]
 
 	onMount(() => {
-		console.log('cliff: ', 123)
 		initSlider()
 	})
 
@@ -72,14 +71,16 @@
 			await requireJS('https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/js/splide-extension-video.min.js')
 		}
 		const splide = new Splide( '.splide', {
-			heightRatio: 0.5625,
+			heightRatio: 0.64,
 			cover      : true,
+			padding: '8rem',
 			video      : {
 				loop: true,
 			},
 			breakpoints: {
 				640: {
-					heightRatio: 0.8,
+					heightRatio: 0.7,
+					padding: '0',
 				},
 			},
 			perPage: 1
@@ -88,17 +89,18 @@
 		splide.mount();
 	}
 </script>
-<!--<video controls src="https://ehla-media.oss-cn-hongkong.aliyuncs.com/Managing%20the%20Quality%20of%20EHLA%20English%20Language%20Teaching%20and%20Learning%20Resources.mp4"></video>-->
-<div class="splide ">
+
+<div class="splide">
 	<div class="splide__track">
 		<ul class="splide__list">
 			{#each videos as v}
-				<li class="splide__slide relative">
-<!--					<img class="inset-0 z-10 absolute" src="{v.poster}">-->
-					<video controls src={v.video_url} poster={v.poster}></video>
-					<div class="p-2 sm:py-4 bg-white absolute bottom-0 inset-x-0 text-center text-sm sm:text-base">
-						<p class="mb-1">{v.title_hk}</p>
-						<p>- {v.author_hk}</p>
+				<li class="splide__slide relative px-4">
+					<div class="relative h-full">
+						<video controls src={v.video_url} poster={v.poster}></video>
+						<div class="p-2 sm:py-4 bg-white/[0.99] absolute bottom-0 inset-x-0 text-center text-sm sm:text-base">
+							<p class="mb-1">{v.title_hk}</p>
+							<p>- {v.author_hk}</p>
+						</div>
 					</div>
 				</li>
 			{/each}
