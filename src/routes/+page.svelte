@@ -1,5 +1,5 @@
 <script>
-	import Download from './_donwload-app-section.svelte'
+	import ScmpHero from "./ScmpHero.svelte";
 	import FurlongBanner from "../lib/static-section/FurlongBanner.svelte";
 	import ReaderSection from './_reader.svelte'
 	import SharingHero from "./_SharingHero.svelte";
@@ -86,6 +86,8 @@
 		</div>
 	</div>
 </div>
+
+<ScmpHero/>
 
 <ReaderSection/>
 

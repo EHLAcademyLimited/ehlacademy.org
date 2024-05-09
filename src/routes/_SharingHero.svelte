@@ -39,17 +39,6 @@
 			poster: "/video_preview_2.png"
 		},
 		{
-			id: '7ztKjnaBNek',
-			title_hk: '如何確保EHLA英文教學資源的一致性、可靠性與權威性',
-			title_cn: '如何确保EHLA英语教学资源的一致性、可靠性与权力',
-			author_hk: '牛津大學語言學家，EHLA 英文總編輯，Dr. Adrian Bullock',
-			author_cn: '牛津大学语言学家，EHLA 英文总编辑，Dr. Adrian Bullock ',
-			title_en: 'Managing the Quality of EHLA English Language Teaching and Learning Resources',
-			author_en: 'Chief Editor of EHLA, Linguist from University of Oxford',
-			video_url: "https://ehla-media.oss-cn-hongkong.aliyuncs.com/Managing%20the%20Quality%20of%20EHLA%20English%20Language%20Teaching%20and%20Learning%20Resources.mp4",
-			poster: "/video_preview_3.png"
-		},
-		{
 			id: 'QTJdWATpCLU',
 			title_hk: '總編輯的訪問',
 			title_cn: '总编辑的访问',
@@ -60,48 +49,19 @@
 			poster: "/video_preview_4.png"
 		}
 	]
-
-	onMount(() => {
-		initSlider()
-	})
-
-	const initSlider = async () => {
-		try { Splide } catch (e) {
-			await requireJS('/js/splide.min.js')
-		}
-		const splide = new Splide( '.splide', {
-			heightRatio: 0.64,
-			cover      : true,
-			padding: '8rem',
-			video      : {
-				loop: true,
-			},
-			breakpoints: {
-				640: {
-					heightRatio: 0.7,
-					padding: '0',
-				},
-			},
-			perPage: 1
-		} );
-		// splide.mount(window.splide.Extensions);
-		splide.mount();
-	}
 </script>
 
-<div class="splide">
-	<div class="splide__track">
-		<ul class="splide__list">
+<div class="">
+	<div class="">
+		<ul class="grid gap-4 sm:gap-8">
 			{#each videos as v}
-				<li class="splide__slide relative px-4">
-					<div class="relative h-full">
-						<video controls src={v.video_url} poster={v.poster}></video>
-						<div class="p-2 sm:py-4 bg-white/[0.99] absolute bottom-0 inset-x-0 text-center text-sm sm:text-base">
-							<p class="mb-1">{v[`title_${$locale}`]}</p>
-							<p>{v[`author_${$locale}`]}</p>
-						</div>
+				<div class="rounded-2xl overflow-hidden">
+					<video controls src={v.video_url} poster={v.poster}></video>
+					<div class="p-2 sm:py-4 bg-gray-400 text-white text-center text-sm sm:text-lg">
+						<p class="mb-1">{v[`title_${$locale}`]}</p>
+						<p>{v[`author_${$locale}`]}</p>
 					</div>
-				</li>
+				</div>
 			{/each}
 		</ul>
 	</div>

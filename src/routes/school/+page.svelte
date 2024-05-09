@@ -94,114 +94,19 @@
 			<div class="self-center">
 				<h2 class="text-t1 md:text-t2 font-bold mb-4 text-brown-700">{$t('school.conference')}</h2>
 				<p class="text-p2 md:text-p3 mb-8 text-brown-500">{$t('school.conference_desc')}</p>
-				<div class="grid grid-cols-2 gap-2 sm:gap-4">
-					{#each conference as c}
-						<div on:click={() => {showVideo(c)}} class="group cursor-pointer py-4 px-2 sm:px-4 bg-gray-200 hover:bg-red-500 hover:text-white rounded inline-flex items-center">
-							<div class="font-bold flex-1">
-								<p class="group-hover:text-white text-red-500 leading-none">{c.year}</p>
-								<p class="text-p2">{$t('school.play_video')}</p>
-							</div>
-							<div class="opacity-50"><Icon className="w-6 sm:w-10" name="video"/></div>
-						</div>
-					{/each}
-				</div>
 			</div>
 		</div>
-	</div>
-</div>
-
-<div id="writing" class="bg-brown-100a bg-no-repeat bg-right-bottom bg-size" style="background-image: url('/writing0bg.png');">
-	<div class="max-w-screen- mx-auto px-6 py-12">
-		<div class="mb-4 md:mb-8">
-			<h2 class="font-bold text-t1 sm:text-t2 mt-2 mb-4 text-brown-400a">
-				DSE Oral Mock & Intensive Training Programme (Paper 4)
-			</h2>
-			<ul class="list-disc list-inside">
-				<li class="text-p2 sm:text-p3 font-bold text-brown-400 leading-tight">
-					DSE Oral Mock & Intensive Training for Form 6 students
-				</li>
-				<li class="text-p2 sm:text-p3 font-bold text-brown-400 leading-tight">
-					Pre-DSE Oral Intensive Training for Form 5 / Form 4 students
-				</li>
-			</ul>
-		</div>
-		<p class="text-p2 sm:text-p3 font-bold text-orange-600 mb-6">
-			1 on 5 Zoom session /40 minutes<br>
-			Facilitator: NET teachers from EHLA
-		</p>
-		<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-16">
-			<div>
-				<p class="my-2">Each session covers one HOT topic</p>
-				<ul class="list-disc list-inside my-2">
-					<li>Hot topics for current issues</li>
-					<li>Guidance before mock</li>
-					<li>Mock group discussion & individual response</li>
-					<li>Evaluation after mock</li>
-					<li>Key notes available</li>
-				</ul>
-				<div class="my-4 text-lg">
-					<p><b class="text-red-700">HK$680</b> ONLY for 5 sessions per student</p>
-					<p><b class="text-red-700">HK$1180</b> ONLY for 10 sessions per student</p>
-				</div>
-				<a href="https://forms.gle/GLtYmVf8pZB7d1fe9" target="_blank" class="inline-block my-4 bg-orange-500 text-white px-4 py-2 rounded text-xl">
-					Enrol now
-				</a>
-			</div>
-			<div>
-
-			</div>
-		</div>
-	</div>
-</div>
-
-<!--<Writing/>-->
-
-<Package/>
-
-<Reader/>
-
-<div class="bg-gray-200 mb-4 -mx-2 md:mx-0 ripple-bg rounded">
-	<div class="grid grid-cols-1 sm:grid-cols-2 bg-center bg-no-repeat">
-		<div class="px-4 py-12 sm:py-12 sm:pl-8 sm:pr-0 md:p-24 md:pr-0">
-			<h1 class="text-t2 md:text-h1 text-brown-400a font-bond mb-2">{$t('school.ai_plan.register.title')}</h1>
-			<p class="text-brown-400a text-p3 md:text-t1 mb-4">{@html $t('school.ai_plan.title')}</p>
-			{#each [1,2,3,4] as i}
-				<div class="flex items-center my-1 text-brown-500">
-					<div class="w-8 h-8 cc flex-shrink-0">
-						<Icon name="tick" className="text-red-500 w-4"/>
+		<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 sm:mt-4">
+			{#each conference as c}
+				<div class="group cursor-pointer py-4 px-2 sm:px-4 bg-gray-200 hover:bg-red-500 hover:text-white rounded inline-flex items-center">
+					<div class="font-bold flex-1">
+						<p class="group-hover:text-white text-red-500 leading-none mb-2">{c.year}</p>
+						<iframe class=" w-full h-60" src="https://www.youtube.com/embed/{c.youtube_id}"
+						        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						        allowfullscreen></iframe>
 					</div>
-					<p class="ml-2 leading-tight text-p2 font-bold">{$t(`school.ai_plan.${i}`)}</p>
 				</div>
 			{/each}
-			<p class="text-p2 text-brown-500 mt-4">{@html $t('school.ai_plan.register.desc')}</p>
-		</div>
-		<div class="self-end">
-			<img src="/ai-tool-screen-blur2.png" alt="app-screen" class="mx-auto sm:ml-auto">
-		</div>
-	</div>
-</div>
-
-<AT/>
-
-<div class="bg-gray-100">
-	<div class="max-w-screen-xl md:px-8 py-8 md:py-16 mx-auto text-brown-500">
-		<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-16">
-			<div>
-				<h1 class="text-t1 md:text-t3 mb-4 text-brown-400a">{$t('school.resources.title')}</h1>
-				<p class="text md:text-p3 mb-2">{$t('school.resources.desc')}</p>
-				<ul class="text md:text-p3 mb-8">
-					{#each [1,2,3,4,5] as i}
-						<li class="pl-6 relative">
-							<div class="w-2 h-2 rounded-full bg-current absolute left-0 top-2 md:top-3"></div>
-							{$t(`school.resources.f_${i}`)}
-						</li>
-					{/each}
-				</ul>
-				<a href="/organisation/school#contact" class="w-full md:w-auto text-center font-bold inline-block text md:text-p2 bg-gray-200 rounded px-10 py-4 text-brown-400a hover:bg-brown-400a hover:text-white">{$t('contact_us_for_enquiry')}</a>
-			</div>
-			<div class="max-w-lg">
-				<img src="/stack-of-card.png" alt="card">
-			</div>
 		</div>
 	</div>
 </div>
