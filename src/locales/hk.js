@@ -1150,7 +1150,7 @@ export default {
 		email: '電郵地址',
 		tel: '電話',
 		address: '地址',
-		hk_office_address: '香港九龍觀塘開源道64號源成中心21樓2105-07室'
+		hk_office_address: '香港九龍九龍灣宏開道8號其士商業中心6樓16-17室'
 	},
 	about_ehla: {
 		title: '關於EHLA',

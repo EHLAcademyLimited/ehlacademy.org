@@ -1151,7 +1151,7 @@ export default {
 		email: 'Email',
 		tel: 'Tel',
 		address: 'Address',
-		hk_office_address: 'Units 2105-07, 21/F, Yen Sheng Centre, 64 Hoi Yuen Road, Kwun Tung, Kowloon, Hong Kong'
+		hk_office_address: 'Unit 16-17, 6/F., Chevalier Commercial Centre, 8 Wang Hoi Road, Kowloon Bay, Kowloon'
 	},
 	about_ehla: {
 		title: 'About EHLA',
