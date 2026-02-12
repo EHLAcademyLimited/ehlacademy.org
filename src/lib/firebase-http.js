@@ -3,7 +3,7 @@ import { json } from "@sveltejs/kit";
 import qs from 'qs';
 
 const base_prod = 'https://us-central1-ehla-dse.cloudfunctions.net/api';
-const base_dev = 'http://[::1]:5001/ehla-dse/us-central1/api';
+const base_dev = 'http://127.0.0.1:5001/ehla-dse/us-central1/api';
 // Fallback to prod if you want to test against live data locally
 const use_prod_locally = false;
 const base = (dev && !use_prod_locally) ? base_dev : base_prod;
